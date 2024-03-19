@@ -43,19 +43,18 @@ begin
 
 with pc_i select
   ir_o <= --début du programme en adresse 0      
-          --mnémonique opérande  adresse  
-          
-         LOADaddr 	& X"10" when	X"00",  -- Accu = port a
-         STOREaddr 	& X"11" when	X"01",  -- port b = Accu
-         BRA       	& X"00" when	X"02",  -- saut à 00                    
+          --mnémonique opérande  adresse                  
           
          --Read dilswitch1
+         LOADaddr 	& X"10" when	X"00",
          
          --Read dilswitch2
+         LOADaddr 	& X"10" when	X"01",
          
          --Check if dilswitch2 == 0 jump ELSE
          
          --dilswitch1 -> bargraph1 
+         STOREaddr 	& X"11" when	X"01",
         
          --hexa dilswitch 1 fort 7seg
          
