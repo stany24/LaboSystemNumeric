@@ -43,11 +43,32 @@ begin
 
 with pc_i select
   ir_o <= --début du programme en adresse 0      
-          --mnémonique opérande  adresse    
+          --mnémonique opérande  adresse  
+          
          LOADaddr 	& X"10" when	X"00",  -- Accu = port a
          STOREaddr 	& X"11" when	X"01",  -- port b = Accu
          BRA       	& X"00" when	X"02",  -- saut à 00                    
-         BRA		& X"FF" when 	others;  
           
-
+         --Read dilswitch1
+         
+         --Read dilswitch2
+         
+         --Check if dilswitch2 == 0 jump ELSE
+         
+         --dilswitch1 -> bargraph1 
+        
+         --hexa dilswitch 1 fort 7seg
+         
+         --jump start
+         BRA       	& X"00" when	X"03",
+         
+         --ELSE dilswitch1 XOR dilswitch2 -> bargraph1
+         
+         -- C -> 7seg
+         
+         --jump start
+         BRA       	& X"00" when	X"04",
+         
+         BRA		& X"FF" when 	others;    
+          
 end architecture Behavioral ; -- of ROM
