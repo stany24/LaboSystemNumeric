@@ -1,0 +1,37 @@
+INSTRUCTION;;;;;CCR;ALU;;;
+mnémonique;paramètre;ALU;Accu_load;data_wr;ZCVN;Oper1;Oper2;PC next;fonctions
+STOREaddr ;addr;-;-;V;-;-;-;+1;accu -> DATA(addr)
+LOADconst ;const;V;V;-;Z--N;const;-;+1;const -> accu
+LOADaddr  ;addr;V;V;-;Z--N;DATA(addr);-;+1;DATA(addr) -> accu
+ANDconst  ;const;V;V;-;Z--N;accu;const;+1;accu and const -> accu
+ANDaddr   ;addr;V;V;-;Z--N;accu;DATA(addr);+1;accu and DATA(addr) -> accu
+ORconst   ;const;V;V;-;Z--N;accu;const;+1;accu or const -> accu
+ORaddr    ;addr;V;V;-;Z--N;accu;DATA(addr);+1;accu or DATA(addr) -> accu
+XORconst  ;const;V;V;-;Z--N;accu;const;+1;accu xor const -> accu
+XORaddr   ;addr;V;V;-;Z--N;accu;DATA(addr);+1;accu xor DATA(addr) -> accu
+ROLaccu   ;- ;V;V;-;ZC-N;accu;-;+1;rotation à gauche avec carry -> accu
+RORaccu   ;- ;V;V;-;ZC-N;accu;-;+1;rotation à droite avec carry -> accu
+ADDconst  ;const;V;V;-;ZCVN;accu;const;+1;accu + const -> accu 
+ADDaddr   ;addr;V;V;-;ZCVN;accu;DATA(addr);+1;accu + DATA(addr) -> accu
+ADCconst  ;const;V;V;-;ZCVN;accu;const;+1;accu + const + carry -> accu 
+ADCaddr   ;addr;V;V;-;ZCVN;accu;DATA(addr);+1;accu + DATA(addr) + carry -> accu
+NEGaccu   ;-;V;V;-;Z--N;accu;-;+1;complément à 2 de accu -> accu
+NEGconst  ;const;V;V;-;Z--N;const;-;+1;complément à 2 de const -> accu
+NEGaddr   ;addr;V;V;-;Z--N;DATA(addr);-;+1;complément à 2 de DATA(addr) -> accu
+INCaccu;- ;V;V;-;ZC-N;accu;-;+1;accu + 1 -> accu 
+INCaddr;addr;V;V;-;ZC-N;DATA(addr);-;+1;DATA(addr) + 1 -> accu 
+DECaccu;- ;V;V;-;ZC-N;accu;-;+1;accu -1 -> accu 
+DECaddr;addr;V;V;-;ZC-N;DATA(addr);-;+1;DATA(addr) - 1 -> accu 
+SETC      ;-;V;-;-;-C--;-;-;+1;1 -> C
+CLRC      ;-;V;-;-;-C--;-;-;+1;0 -> C
+TRFNC     ;-;V;-;-;-C--;-;-;+1;N -> C
+BZ0       ;addr;-;-;-;-;-;-;+1 / addr;si Z = 0 alors addr -> PC
+BZ1       ;addr;-;-;-;-;-;-;+1 / addr;si Z = 1 alors addr -> PC
+BC0       ;addr;-;-;-;-;-;-;+1 / addr;si C = 0 alors addr -> PC
+BC1       ;addr;-;-;-;-;-;-;+1 / addr;si C = 1 alors addr -> PC
+BV0       ;addr;-;-;-;-;-;-;+1 / addr;si V = 0 alors addr -> PC
+BV1       ;addr;-;-;-;-;-;-;+1 / addr;si V = 1 alors addr -> PC
+BN0       ;addr;-;-;-;-;-;-;+1 / addr;si N = 0 alors addr -> PC
+BN1       ;addr;-;-;-;-;-;-;+1 / addr;si N = 1 alors addr -> PC
+BRA       ;addr;-;-;-;-;-;-;addr;addr -> PC
+NOP       ;addr;-;-;-;-;-;-;+1;-

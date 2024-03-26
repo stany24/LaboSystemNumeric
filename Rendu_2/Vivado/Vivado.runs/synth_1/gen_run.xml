@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tfgg484-1" LaunchTime="1704216669">
+<GenRun Id="synth_1" LaunchPart="xc7a35tfgg484-1" LaunchTime="1711452351">
   <File Type="PA-TCL" Name="nanoControleur.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="nanoControleur_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="nanoControleur_reports.tcl"/>
@@ -13,7 +13,7 @@
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/design.hdl/nanoProcesseur_package.vhd">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../EASE/nanoprocesseur_v4.ews/design.hdl/nanoProcesseur_package.vhd"/>
+        <Attr Name="ImportPath" Val="P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/EASE/nanoprocesseur_v4.ews/design.hdl/nanoProcesseur_package.vhd"/>
         <Attr Name="ImportTime" Val="1704216347"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -21,7 +21,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/design.hdl/ALU.vhd">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../EASE/nanoprocesseur_v4.ews/design.hdl/ALU.vhd"/>
+        <Attr Name="ImportPath" Val="P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/EASE/nanoprocesseur_v4.ews/design.hdl/ALU.vhd"/>
         <Attr Name="ImportTime" Val="1704216344"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -29,7 +29,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/design.hdl/Address_Decode.vhd">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../EASE/nanoprocesseur_v4.ews/design.hdl/Address_Decode.vhd"/>
+        <Attr Name="ImportPath" Val="P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/EASE/nanoprocesseur_v4.ews/design.hdl/Address_Decode.vhd"/>
         <Attr Name="ImportTime" Val="1704216344"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -37,7 +37,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/design.hdl/Data_Multiplexer.vhd">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../EASE/nanoprocesseur_v4.ews/design.hdl/Data_Multiplexer.vhd"/>
+        <Attr Name="ImportPath" Val="P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/EASE/nanoprocesseur_v4.ews/design.hdl/Data_Multiplexer.vhd"/>
         <Attr Name="ImportTime" Val="1704216345"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -45,7 +45,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/design.hdl/Instruction_Register.vhd">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../EASE/nanoprocesseur_v4.ews/design.hdl/Instruction_Register.vhd"/>
+        <Attr Name="ImportPath" Val="P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/EASE/nanoprocesseur_v4.ews/design.hdl/Instruction_Register.vhd"/>
         <Attr Name="ImportTime" Val="1704216345"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -53,7 +53,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/design.hdl/Operandes_Multiplexer.vhd">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../EASE/nanoprocesseur_v4.ews/design.hdl/Operandes_Multiplexer.vhd"/>
+        <Attr Name="ImportPath" Val="P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/EASE/nanoprocesseur_v4.ews/design.hdl/Operandes_Multiplexer.vhd"/>
         <Attr Name="ImportTime" Val="1704216345"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -61,7 +61,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/design.hdl/Operandes_Register.vhd">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../EASE/nanoprocesseur_v4.ews/design.hdl/Operandes_Register.vhd"/>
+        <Attr Name="ImportPath" Val="P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/EASE/nanoprocesseur_v4.ews/design.hdl/Operandes_Register.vhd"/>
         <Attr Name="ImportTime" Val="1704216345"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -69,7 +69,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/design.hdl/Output_Register.vhd">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../EASE/nanoprocesseur_v4.ews/design.hdl/Output_Register.vhd"/>
+        <Attr Name="ImportPath" Val="P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/EASE/nanoprocesseur_v4.ews/design.hdl/Output_Register.vhd"/>
         <Attr Name="ImportTime" Val="1704216345"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -77,7 +77,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/design.hdl/Program_Counter.vhd">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../EASE/nanoprocesseur_v4.ews/design.hdl/Program_Counter.vhd"/>
+        <Attr Name="ImportPath" Val="P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/EASE/nanoprocesseur_v4.ews/design.hdl/Program_Counter.vhd"/>
         <Attr Name="ImportTime" Val="1704216345"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -85,7 +85,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/design.hdl/RAM.vhd">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../EASE/nanoprocesseur_v4.ews/design.hdl/RAM.vhd"/>
+        <Attr Name="ImportPath" Val="P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/EASE/nanoprocesseur_v4.ews/design.hdl/RAM.vhd"/>
         <Attr Name="ImportTime" Val="1704216346"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -93,7 +93,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/design.hdl/ROM.vhd">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../EASE/nanoprocesseur_v4.ews/design.hdl/ROM.vhd"/>
+        <Attr Name="ImportPath" Val="P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/EASE/nanoprocesseur_v4.ews/design.hdl/ROM.vhd"/>
         <Attr Name="ImportTime" Val="1704216346"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -101,7 +101,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/design.hdl/Sequenceur.vhd">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../EASE/nanoprocesseur_v4.ews/design.hdl/Sequenceur.vhd"/>
+        <Attr Name="ImportPath" Val="P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/EASE/nanoprocesseur_v4.ews/design.hdl/Sequenceur.vhd"/>
         <Attr Name="ImportTime" Val="1704216346"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -109,7 +109,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/design.hdl/Status_Register.vhd">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../EASE/nanoprocesseur_v4.ews/design.hdl/Status_Register.vhd"/>
+        <Attr Name="ImportPath" Val="P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/EASE/nanoprocesseur_v4.ews/design.hdl/Status_Register.vhd"/>
         <Attr Name="ImportTime" Val="1704216346"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -117,7 +117,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/design.hdl/W_Register.vhd">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../EASE/nanoprocesseur_v4.ews/design.hdl/W_Register.vhd"/>
+        <Attr Name="ImportPath" Val="P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/EASE/nanoprocesseur_v4.ews/design.hdl/W_Register.vhd"/>
         <Attr Name="ImportTime" Val="1704216346"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -125,7 +125,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/design.hdl/nanoProcesseur.vhd">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../EASE/nanoprocesseur_v4.ews/design.hdl/nanoProcesseur.vhd"/>
+        <Attr Name="ImportPath" Val="P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/EASE/nanoprocesseur_v4.ews/design.hdl/nanoProcesseur.vhd"/>
         <Attr Name="ImportTime" Val="1704216347"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -133,7 +133,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/design.hdl/nanoControleur.vhd">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../EASE/nanoprocesseur_v4.ews/design.hdl/nanoControleur.vhd"/>
+        <Attr Name="ImportPath" Val="P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/EASE/nanoprocesseur_v4.ews/design.hdl/nanoControleur.vhd"/>
         <Attr Name="ImportTime" Val="1704216346"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -149,7 +149,7 @@
     <Filter Type="Constrs"/>
     <File Path="$PSRCDIR/constrs_1/imports/new/IO_Const.xdc">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../EASE/nanoprocesseur_v4.ews/Vivado/Vivado.srcs/constrs_1/new/IO_Const.xdc"/>
+        <Attr Name="ImportPath" Val="P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/EASE/nanoprocesseur_v4.ews/Vivado/Vivado.srcs/constrs_1/new/IO_Const.xdc"/>
         <Attr Name="ImportTime" Val="1704214364"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -166,9 +166,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

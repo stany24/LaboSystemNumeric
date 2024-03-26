@@ -42,32 +42,24 @@ begin
 
 
 with pc_i select
-  ir_o <= --début du programme en adresse 0      
-          --mnémonique opérande  adresse                  
-          
-         --Read dilswitch1
-         LOADaddr 	& X"10" when	X"00",
+    ir_o <= -- début du programme en adresse 0
+         -- X"10" load dilswitch 1
+         -- X"10" store bargraph 1
+         -- X"11" load dilswitch 2
+         -- X"11" store 7seg 1
+         -- X"E0" RAM
+         LOADaddr & X"10" when X"00", -- load dilswitch 1
+         STOREaddr & X"E0" when x"01", -- store in ram
          
-         --Read dilswitch2
-         LOADaddr 	& X"10" when	X"01",
-         
-         --Check if dilswitch2 == 0 jump ELSE
-         
-         --dilswitch1 -> bargraph1 
-         STOREaddr 	& X"11" when	X"01",
-        
-         --hexa dilswitch 1 fort 7seg
-         
-         --jump start
-         BRA       	& X"00" when	X"03",
-         
-         --ELSE dilswitch1 XOR dilswitch2 -> bargraph1
-         
-         -- C -> 7seg
-         
-         --jump start
-         BRA       	& X"00" when	X"04",
-         
-         BRA		& X"FF" when 	others;    
+         LOADaddr & X"11" when X"02", --load dilswitch 2
+         BZ0 & x"06" when X"03", -- saut si non égal à 0
+         -- if
+         LOADaddr & X"E0" when X"04", -- charge la valeur depuis la ram
+         STOREaddr & X"10" when x"05", -- affiche la valeur sur le bargraph
+         -- else
+         XORaddr & X"E0" when X"06", -- Xor des deux valeurs
+         STOREaddr & X"10" when x"07", -- affiche la valeur sur le bargraph
+         -- end if
+         BRA & X"00" when others; -- Boucle à l'adresse X"0C" 
           
 end architecture Behavioral ; -- of ROM

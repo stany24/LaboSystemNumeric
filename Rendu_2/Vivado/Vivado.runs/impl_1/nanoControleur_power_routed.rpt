@@ -1,8 +1,8 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date             : Tue Jan  2 18:35:56 2024
-| Host             : NB21-B0I-YME running 64-bit major release  (build 9200)
+| Date             : Tue Mar 26 12:26:57 2024
+| Host             : DESKTOP-GGBBNKF running 64-bit major release  (build 9200)
 | Command          : report_power -file nanoControleur_power_routed.rpt -pb nanoControleur_power_summary_routed.pb -rpx nanoControleur_power_routed.rpx
 | Design           : nanoControleur
 | Device           : xc7a35tfgg484-1
@@ -30,11 +30,11 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.069        |
+| Total On-Chip Power (W)  | 0.073        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.000        |
-| Device Static (W)        | 0.068        |
+| Dynamic (W)              | 0.001        |
+| Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 2.8          |
 | Max Ambient (C)          | 84.8         |
 | Junction Temperature (C) | 25.2         |
@@ -53,16 +53,17 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.000 |        3 |       --- |             --- |
-| Slice Logic              |    <0.001 |      106 |       --- |             --- |
-|   LUT as Logic           |    <0.001 |       35 |     20800 |            0.17 |
+| Slice Logic              |    <0.001 |      249 |       --- |             --- |
+|   LUT as Logic           |    <0.001 |      140 |     20800 |            0.67 |
+|   CARRY4                 |    <0.001 |        2 |      8150 |            0.02 |
+|   Register               |    <0.001 |       63 |     41600 |            0.15 |
 |   BUFG                   |    <0.001 |        1 |        32 |            3.13 |
 |   LUT as Distributed RAM |    <0.001 |        8 |      9600 |            0.08 |
-|   Register               |    <0.001 |       51 |     41600 |            0.12 |
-|   Others                 |     0.000 |        3 |       --- |             --- |
-| Signals                  |    <0.001 |       97 |       --- |             --- |
+|   Others                 |     0.000 |        5 |       --- |             --- |
+| Signals                  |    <0.001 |      222 |       --- |             --- |
 | I/O                      |    <0.001 |       34 |       250 |           13.60 |
-| Static Power             |     0.068 |          |           |                 |
-| Total                    |     0.069 |          |           |                 |
+| Static Power             |     0.072 |          |           |                 |
+| Total                    |     0.073 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,9 +73,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.010 |       0.000 |      0.010 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.011 |       0.001 |      0.010 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -136,8 +137,10 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+------+-----------+
-| Name | Power (W) |
-+------+-----------+
++----------------+-----------+
+| Name           | Power (W) |
++----------------+-----------+
+| nanoControleur |     0.001 |
++----------------+-----------+
 
 
