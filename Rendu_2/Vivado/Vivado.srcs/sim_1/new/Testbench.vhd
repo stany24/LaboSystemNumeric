@@ -74,7 +74,6 @@ run: PROCESS
   BEGIN
     port_a_i <= "00000000";
     port_b_i <= "00000000";
-    port_a_o <= "00000000";
     reset_i <= '0';
   				
   END init;

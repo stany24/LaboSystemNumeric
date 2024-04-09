@@ -1,15 +1,6 @@
 Vivado Simulator 2020.2
 Time resolution is 1 ps
-Stopped at time : 0 fs : File "C:/Users/Stan/Documents/Git/LaboSystemNumeric/Rendu_2/Vivado/Vivado.srcs/sources_1/imports/design.hdl/ROM.vhd" Line 51
 Note: la simulation est en cours
 Time: 0 ps  Iteration: 0  Process: /testbench/run  File: C:/Users/Stan/Documents/Git/LaboSystemNumeric/Rendu_2/Vivado/Vivado.srcs/sim_1/new/Testbench.vhd
-Warning: Etat du signal non correct
-Time: 19975 ns  Iteration: 1  Process: /testbench/run  File: C:/Users/Stan/Documents/Git/LaboSystemNumeric/Rendu_2/Vivado/Vivado.srcs/sim_1/new/Testbench.vhd
-Warning: Etat du signal non correct
-Time: 29975 ns  Iteration: 1  Process: /testbench/run  File: C:/Users/Stan/Documents/Git/LaboSystemNumeric/Rendu_2/Vivado/Vivado.srcs/sim_1/new/Testbench.vhd
 Note: la simulation est en cours
 Time: 0 ps  Iteration: 0  Process: /testbench/run  File: C:/Users/Stan/Documents/Git/LaboSystemNumeric/Rendu_2/Vivado/Vivado.srcs/sim_1/new/Testbench.vhd
-Warning: Etat du signal non correct
-Time: 19975 ns  Iteration: 1  Process: /testbench/run  File: C:/Users/Stan/Documents/Git/LaboSystemNumeric/Rendu_2/Vivado/Vivado.srcs/sim_1/new/Testbench.vhd
-Warning: Etat du signal non correct
-Time: 29975 ns  Iteration: 1  Process: /testbench/run  File: C:/Users/Stan/Documents/Git/LaboSystemNumeric/Rendu_2/Vivado/Vivado.srcs/sim_1/new/Testbench.vhd

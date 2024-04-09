@@ -52,16 +52,97 @@ with pc_i select
          STOREaddr & X"E0" when X"01", -- store in ram
          
          LOADaddr & X"11" when X"02", --load dilswitch 2
-         BZ0 & X"07" when X"03", -- saut si non égal à 0
+         BZ0 & X"B0" when X"03", -- saut si non égal à 0
          -- if dilswitch2 == 0
          LOADaddr & X"E0" when X"04", -- charge la valeur depuis la ram
          STOREaddr & X"10" when X"05", -- affiche la valeur sur le bargraph 1
-         BRA & X"00" when X"06", -- Boucle à l'adresse X"00"
+         ANDconst & X"11110000" when X"0A", -- Suppresion des bits forts
+         
+         XORconst & "00000000" when X"0B", -- cas 0
+         BZ1 & X"0F" when X"0C",
+         LOADconst & "11111100" when X"0D",
+         BRA & X"00" when X"0E",
+         
+         XORconst & "0001000" when X"0F", -- cas 1
+         BZ1 & X"13" when X"10",
+         LOADconst & "1100000" when X"11",
+         BRA & X"00" when X"12",
+         
+         XORconst & "00100000" when X"13", -- cas 2
+         BZ1 & X"17" when X"14",
+         LOADconst & "11011010" when X"15",
+         BRA & X"00" when X"16",
+         
+         XORconst & "00110000" when X"17", -- cas 3
+         BZ1 & X"1B" when X"18",
+         LOADconst & "00111110" when X"19",
+         BRA & X"00" when X"1A",
+         
+         XORconst & "01000000" when X"1B", -- cas 4
+         BZ1 & X"1F" when X"1C",
+         LOADconst & "10011010" when X"1D",
+         BRA & X"00" when X"1E",
+         
+         XORconst & "01010000" when X"1F", -- cas 5
+         BZ1 & X"23" when X"20",
+         LOADconst & "10110110" when X"21",
+         BRA & X"00" when X"22",
+         
+         XORconst & "01100000" when X"23", -- cas 6
+         BZ1 & X"27" when X"24",
+         LOADconst & "01111110" when X"25",
+         BRA & X"00" when X"26",
+         
+         XORconst & "01110000" when X"27", -- cas 7
+         BZ1 & X"2F" when X"28",
+         LOADconst & "11100000" when X"29",
+         BRA & X"00" when X"2A",
+         
+         XORconst & "10000000" when X"2F", -- cas 8
+         BZ1 & X"33" when X"30",
+         LOADconst & "11111110" when X"31",
+         BRA & X"00" when X"32",
+         
+         XORconst & "10010000" when X"33", -- cas 9
+         BZ1 & X"37" when X"34",
+         LOADconst & "11101110" when X"35",
+         BRA & X"00" when X"36",
+         
+         XORconst & "10100000" when X"37", -- cas A
+         BZ1 & X"3B" when X"38",
+         LOADconst & "11101110" when X"39",
+         BRA & X"00" when X"3A",
+         
+         XORconst & "10110000" when X"3B", -- cas B
+         BZ1 & X"3F" when X"3C",
+         LOADconst & "00111010" when X"3D",
+         BRA & X"00" when X"3E",
+         
+         XORconst & "11000000" when X"3F", -- cas C
+         BZ1 & X"43" when X"40",
+         LOADconst & "10011100" when X"41",
+         BRA & X"00" when X"42",
+         
+         XORconst & "11010000" when X"43", -- cas D
+         BZ1 & X"47" when X"44",
+         LOADconst & "01111010" when X"45",
+         BRA & X"00" when X"46",
+         
+         XORconst & "111000000" when X"47", -- cas E
+         BZ1 & X"4B" when X"48",
+         LOADconst & "10011110" when X"49",
+         BRA & X"00" when X"4A",
+         
+         XORconst & "11110000" when X"4B", -- cas F
+         BZ1 & X"00" when X"4C",
+         LOADconst & "10001110" when X"4D",
+         BRA & X"00" when X"4E",
+        
          -- else
-         XORaddr & X"E0" when X"07", -- Xor des deux valeurs
-         STOREaddr & X"10" when X"08", -- affiche la valeur sur le bargraph 1
-         LOADconst & "00111100" when X"09", -- charge la valeur de c
-         STOREaddr & X"11" when X"0A", -- affiche c sur l'affichage 7seg
+         XORaddr & X"E0" when X"B0", -- Xor des deux valeurs
+         STOREaddr & X"10" when X"B1", -- affiche la valeur sur le bargraph 1
+         LOADconst & "00111100" when X"B2", -- charge la valeur de c
+         STOREaddr & X"11" when X"B3", -- affiche c sur l'affichage 7seg
          -- end if
          BRA & X"00" when others; -- Boucle à l'adresse X"00" 
           
