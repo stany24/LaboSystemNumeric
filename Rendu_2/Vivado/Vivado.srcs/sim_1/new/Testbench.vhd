@@ -118,7 +118,7 @@ BEGIN --debut de la simulation temps t=0ns
         sim_cycle(200);
         test_vecteur(port_a_o,"11111111",3);
         sim_cycle(200);
-        test_vecteur(port_b_o,"00111100",4);
+        test_vecteur(port_b_o,"01001110",4);
         sim_cycle(200);
         sim_end <= TRUE;
         wait;
