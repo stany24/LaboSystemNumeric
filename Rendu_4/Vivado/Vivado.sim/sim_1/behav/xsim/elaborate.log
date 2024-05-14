@@ -1,0 +1,31 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 59e4eea8557c45008183b1543f1ea080 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_behav xil_defaultlib.testbench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.nanoprocesseur_package
+Compiling architecture behavioral of entity xil_defaultlib.Sequenceur [sequenceur_default]
+Compiling architecture behavioral of entity xil_defaultlib.Program_Counter [program_counter_default]
+Compiling architecture behavioral of entity xil_defaultlib.Instruction_Register [instruction_register_default]
+Compiling architecture behavioral of entity xil_defaultlib.Operandes_Multiplexer [operandes_multiplexer_default]
+Compiling architecture behavioral of entity xil_defaultlib.ALU [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.Status_Register [status_register_default]
+Compiling architecture behavioral of entity xil_defaultlib.W_Register [w_register_default]
+Compiling architecture behavioral of entity xil_defaultlib.Operandes_Register [operandes_register_default]
+Compiling architecture structural of entity xil_defaultlib.nanoProcesseur [nanoprocesseur_default]
+Compiling architecture behavioral of entity xil_defaultlib.ROM [rom_default]
+Compiling architecture behavioral of entity xil_defaultlib.Data_Multiplexer [data_multiplexer_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAM [ram_default]
+Compiling architecture behavioral of entity xil_defaultlib.Output_Register [output_register_default]
+Compiling architecture behavioral of entity xil_defaultlib.Address_Decode [address_decode_default]
+Compiling architecture structural of entity xil_defaultlib.nanoControleur [nanocontroleur_default]
+Compiling architecture structure of entity xil_defaultlib.testbench
+Built simulation snapshot testbench_behav
