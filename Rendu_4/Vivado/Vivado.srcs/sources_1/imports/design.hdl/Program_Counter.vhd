@@ -31,7 +31,9 @@ entity Program_Counter is
     PC_load_i : in     std_logic;
     PC_o      : out    std_logic_vector(7 downto 0);
     PC_inc_i  : in     std_logic;
-    addr_i    : in     std_logic_vector(7 downto 0));
+    addr_i    : in     std_logic_vector(7 downto 0);
+    restore_i : in     std_logic;
+    addr_restor_i : in std_logic_vector(7 downto 0));
 end entity Program_Counter;
 
 --------------------------------------------------------------------------------

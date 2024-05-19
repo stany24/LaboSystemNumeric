@@ -417,3 +417,345 @@ selectCodeEditor("nanoControleur.vhd", 376, 234); // bP
 // TclEventType: DG_GRAPH_STALE
 // TclEventType: FILE_SET_CHANGE
 // WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1643 ms. Decreasing delay to 3643 ms.
+// Elapsed time: 71 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Stack.vhd", 1); // m
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F
+selectCodeEditor("nanoProcesseur.vhd", 520, 172); // bP
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 3680 ms. Increasing delay to 11040 ms.
+// Elapsed time: 25 seconds
+selectCodeEditor("nanoProcesseur.vhd", 496, 363); // bP
+// Elapsed time: 13 seconds
+selectCodeEditor("nanoProcesseur.vhd", 464, 368); // bP
+selectCodeEditor("nanoProcesseur.vhd", 526, 334); // bP
+selectCodeEditor("nanoProcesseur.vhd", 347, 391); // bP
+selectCodeEditor("nanoProcesseur.vhd", 524, 356); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("nanoProcesseur.vhd", 288, 390); // bP
+typeControlKey((HResource) null, "nanoProcesseur.vhd", 'c'); // bP
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nanoControleur(Structural) (nanoControleur.vhd)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nanoControleur(Structural) (nanoControleur.vhd)]", 1, true, false, false, false, false, true); // D - Double Click - Node
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1677 ms. Decreasing delay to 3677 ms.
+selectCodeEditor("nanoControleur.vhd", 490, 353); // bP
+typeControlKey((HResource) null, "nanoControleur.vhd", 'v'); // bP
+selectCodeEditor("nanoControleur.vhd", 563, 323); // bP
+selectCodeEditor("nanoControleur.vhd", 563, 323); // bP
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1983 ms. Increasing delay to 5949 ms.
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("nanoControleur.vhd", 364, 249); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1547 ms.
+selectCodeEditor("nanoControleur.vhd", 301, 434); // bP
+// Elapsed time: 15 seconds
+selectCodeEditor("nanoControleur.vhd", 469, 400); // bP
+selectCodeEditor("nanoControleur.vhd", 298, 448); // bP
+selectCodeEditor("nanoControleur.vhd", 320, 427); // bP
+selectCodeEditor("nanoControleur.vhd", 346, 372); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F
+selectCodeEditor("nanoProcesseur.vhd", 591, 354); // bP
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 3021 ms. Increasing delay to 9063 ms.
+// Elapsed time: 24 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nanoControleur(Structural) (nanoControleur.vhd)]", 1); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, true, false); // D - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ah
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ah
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ak
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "Sync"); // aa
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Create Source File"); // F
+selectButton("FINISH", "Finish"); // JButton
+// 'g' command handler elapsed time: 11 seconds
+dismissDialog("Add Sources"); // c
+// Tcl Message: close [ open C:/Users/Stan/Documents/Git/LaboSystemNumeric/Rendu_4/Vivado/Vivado.srcs/sources_1/new/Sync.vhd w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/Stan/Documents/Git/LaboSystemNumeric/Rendu_4/Vivado/Vivado.srcs/sources_1/new/Sync.vhd 
+// I (cr): Define Module: addNotify
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; in ; false ; 0 ; 0", 0, (String) null, 0); // ab
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "clk_i", 0, "Port Name", 0); // ab
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "in", 0, "Direction", 1); // ab
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "clk_i", 0, "Port Name", 0); // ab
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "in", 0, "Direction", 1); // ab
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "reset_i", 1, "Port Name", 0); // ab
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "interupt", 2, "Port Name", 0); // ab
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "sInterupt", 3, "Port Name", 0); // ab
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "sInterupt ; in ; false ; 0 ; 0", 3, "in", 1); // ab
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "out", 3, "Direction", 1); // ab
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Define Module"); // I
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nanoControleur(Structural) (nanoControleur.vhd), nPr_inst : nanoProcesseur(Structural) (nanoProcesseur.vhd)]", 3, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nanoControleur(Structural) (nanoControleur.vhd), nPr_inst : nanoProcesseur(Structural) (nanoProcesseur.vhd)]", 3, true, false, false, false, false, true); // D - Double Click - Node
+selectCodeEditor("nanoProcesseur.vhd", 365, 245); // bP
+// Elapsed time: 15 seconds
+selectCodeEditor("nanoProcesseur.vhd", 433, 207); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Sync(Behavioral) (Sync.vhd)]", 18, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Sync(Behavioral) (Sync.vhd)]", 18, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("Sync.vhd", 34, 286); // bP
+typeControlKey((HResource) null, "Sync.vhd", 'c'); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "nanoProcesseur.vhd", 0); // m
+typeControlKey((HResource) null, "nanoProcesseur.vhd", 'v'); // bP
+selectCodeEditor("nanoProcesseur.vhd", 22, 193); // bP
+// Elapsed time: 19 seconds
+selectCodeEditor("nanoProcesseur.vhd", 276, 213); // bP
+selectCodeEditor("nanoProcesseur.vhd", 110, 60); // bP
+typeControlKey(null, null, 'z');
+selectCodeEditor("nanoProcesseur.vhd", 109, 52); // bP
+selectCodeEditor("nanoProcesseur.vhd", 227, 35); // bP
+selectCodeEditor("nanoProcesseur.vhd", 308, 144); // bP
+// Elapsed time: 12 seconds
+selectCodeEditor("nanoProcesseur.vhd", 45, 156); // bP
+selectCodeEditor("nanoProcesseur.vhd", 233, 116); // bP
+selectCodeEditor("nanoProcesseur.vhd", 198, 171); // bP
+selectCodeEditor("nanoProcesseur.vhd", 215, 162); // bP
+selectCodeEditor("nanoProcesseur.vhd", 309, 132); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("nanoProcesseur.vhd", 252, 27); // bP
+// Elapsed time: 23 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Sync.vhd", 1); // m
+selectCodeEditor("Sync.vhd", 156, 262); // bP
+selectCodeEditor("Sync.vhd", 100, 286); // bP
+typeControlKey((HResource) null, "Sync.vhd", 'c'); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "nanoProcesseur.vhd", 0); // m
+selectCodeEditor("nanoProcesseur.vhd", 141, 121); // bP
+typeControlKey((HResource) null, "nanoProcesseur.vhd", 'v'); // bP
+selectCodeEditor("nanoProcesseur.vhd", 96, 137); // bP
+selectCodeEditor("nanoProcesseur.vhd", 64, 142); // bP
+selectCodeEditor("nanoProcesseur.vhd", 51, 218); // bP
+// Elapsed time: 49 seconds
+selectCodeEditor("nanoProcesseur.vhd", 387, 318); // bP
+selectCodeEditor("nanoProcesseur.vhd", 410, 303); // bP
+// Elapsed time: 14 seconds
+selectCodeEditor("nanoProcesseur.vhd", 58, 347); // bP
+selectCodeEditor("nanoProcesseur.vhd", 257, 325); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("nanoProcesseur.vhd", 167, 408); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1548 ms.
+// Tcl Message: update_compile_order -fileset sources_1 
+selectCodeEditor("nanoProcesseur.vhd", 339, 391); // bP
+selectCodeEditor("nanoProcesseur.vhd", 260, 360); // bP
+selectCodeEditor("nanoProcesseur.vhd", 303, 382); // bP
+// Elapsed time: 34 seconds
+selectCodeEditor("nanoProcesseur.vhd", 459, 365); // bP
+selectCodeEditor("nanoProcesseur.vhd", 464, 74); // bP
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Syntax Error Files]", 23); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Syntax Error Files, nanoProcesseur.vhd]", 24, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Syntax Error Files, nanoProcesseur.vhd]", 24, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("nanoProcesseur.vhd", 429, 311); // bP
+selectCodeEditor("nanoProcesseur.vhd", 752, 128); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("nanoProcesseur.vhd", 654, 206); // bP
+// Elapsed time: 30 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nanoControleur(Structural) (nanoControleur.vhd), nPr_inst : nanoProcesseur(Structural) (nanoProcesseur.vhd), Seq_inst : Sequenceur(Behavioral) (Sequenceur.vhd)]", 5, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nanoControleur(Structural) (nanoControleur.vhd), nPr_inst : nanoProcesseur(Structural) (nanoProcesseur.vhd), Seq_inst : Sequenceur(Behavioral) (Sequenceur.vhd)]", 5, false, false, false, false, false, true); // D - Double Click
+// Elapsed time: 11 seconds
+selectCodeEditor("Sequenceur.vhd", 330, 419); // bP
+// Elapsed time: 12 seconds
+selectCodeEditor("Sequenceur.vhd", 330, 419); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 1350ms to process. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1350 ms.
+selectCodeEditor("Sequenceur.vhd", 36, 454); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+typeControlKey((HResource) null, "Sequenceur.vhd", 'c'); // bP
+// Tcl Message: update_compile_order -fileset sources_1 
+selectCodeEditor("Sequenceur.vhd", 359, 437); // bP
+// [GUI Memory]: 177 MB (+265kb) [02:55:00]
+selectCodeEditor("Sequenceur.vhd", 362, 410); // bP
+selectCodeEditor("Sequenceur.vhd", 299, 450); // bP
+selectCodeEditor("Sequenceur.vhd", 319, 445); // bP
+selectCodeEditor("Sequenceur.vhd", 36, 455); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Sequenceur.vhd", 365, 402); // bP
+// Elapsed time: 167 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nanoControleur(Structural) (nanoControleur.vhd), stack1 : Stack(Behavioral) (Stack.vhd)]", 4, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nanoControleur(Structural) (nanoControleur.vhd), stack1 : Stack(Behavioral) (Stack.vhd)]", 4, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("Stack.vhd", 131, 389); // bP
+selectCodeEditor("Stack.vhd", 92, 451); // bP
+selectCodeEditor("Stack.vhd", 143, 535); // bP
+selectCodeEditor("Stack.vhd", 193, 517); // bP
+selectCodeEditor("Stack.vhd", 79, 297); // bP
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nanoControleur(Structural) (nanoControleur.vhd)]", 3, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nanoControleur(Structural) (nanoControleur.vhd)]", 3, true, false, false, false, false, true); // D - Double Click - Node
+selectCodeEditor("nanoControleur.vhd", 32, 156); // bP
+selectCodeEditor("nanoControleur.vhd", 28, 99); // bP
+selectCodeEditor("nanoControleur.vhd", 336, 248); // bP
+selectCodeEditor("nanoControleur.vhd", 336, 248); // bP
+selectCodeEditor("nanoControleur.vhd", 10, 98); // bP
+// Elapsed time: 15 seconds
+selectCodeEditor("nanoControleur.vhd", 38, 372); // bP
+selectCodeEditor("nanoControleur.vhd", 323, 367); // bP
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Sync.vhd", 1); // m
+selectCodeEditor("Sync.vhd", 244, 337); // bP
+selectCodeEditor("Sync.vhd", 98, 370); // bP
+selectCodeEditor("Sync.vhd", 227, 256); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Sequenceur.vhd", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "nanoProcesseur.vhd", 0); // m
+selectCodeEditor("nanoProcesseur.vhd", 79, 293); // bP
+selectCodeEditor("nanoProcesseur.vhd", 296, 432); // bP
+selectCodeEditor("nanoProcesseur.vhd", 64, 136); // bP
+selectCodeEditor("nanoProcesseur.vhd", 321, 242); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Sequenceur.vhd", 2); // m
+selectCodeEditor("Sequenceur.vhd", 338, 255); // bP
+selectCodeEditor("Sequenceur.vhd", 407, 228); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Sequenceur.vhd", 36, 156); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+typeControlKey((HResource) null, "Sequenceur.vhd", 'c'); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "nanoProcesseur.vhd", 0); // m
+selectCodeEditor("nanoProcesseur.vhd", 355, 339); // bP
+typeControlKey((HResource) null, "nanoProcesseur.vhd", 'v'); // bP
+selectCodeEditor("nanoProcesseur.vhd", 368, 218); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 825ms to process. Increasing delay to 4000 ms.
+selectCodeEditor("nanoProcesseur.vhd", 360, 248); // bP
+selectCodeEditor("nanoProcesseur.vhd", 347, 275); // bP
+selectCodeEditor("nanoProcesseur.vhd", 365, 266); // bP
+selectCodeEditor("nanoProcesseur.vhd", 314, 393); // bP
+// Elapsed time: 12 seconds
+selectCodeEditor("nanoProcesseur.vhd", 348, 345); // bP
+selectCodeEditor("nanoProcesseur.vhd", 400, 331); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 31 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Sequenceur.vhd", 2); // m
+selectCodeEditor("Sequenceur.vhd", 327, 390); // bP
+// Elapsed time: 43 seconds
+selectCodeEditor("Sequenceur.vhd", 519, 420); // bP
+selectCodeEditor("Sequenceur.vhd", 543, 401); // bP
+selectCodeEditor("Sequenceur.vhd", 34, 408); // bP
+typeControlKey((HResource) null, "Sequenceur.vhd", 'c'); // bP
+selectCodeEditor("Sequenceur.vhd", 608, 350); // bP
+selectCodeEditor("Sequenceur.vhd", 490, 193); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Sequenceur.vhd", 288, 352); // bP
+selectCodeEditor("Sequenceur.vhd", 413, 311); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "nanoProcesseur.vhd", 0); // m
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("nanoProcesseur.vhd", 349, 475); // bP
+typeControlKey((HResource) null, "nanoProcesseur.vhd", 'v'); // bP
+selectCodeEditor("nanoProcesseur.vhd", 304, 497); // bP
+selectCodeEditor("nanoProcesseur.vhd", 378, 467); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("nanoProcesseur.vhd", 352, 471); // bP
+// Elapsed time: 93 seconds
+selectCodeEditor("nanoProcesseur.vhd", 339, 300); // bP
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 19327 ms. Increasing delay to 57981 ms.
+// Elapsed time: 54 seconds
+selectCodeEditor("nanoProcesseur.vhd", 262, 331); // bP
+selectCodeEditor("nanoProcesseur.vhd", 415, 276); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("nanoProcesseur.vhd", 259, 284); // bP
+selectCodeEditor("nanoProcesseur.vhd", 356, 252); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1724 ms. Decreasing delay to 3724 ms.
+// Elapsed time: 13 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nanoControleur(Structural) (nanoControleur.vhd)]", 1); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nanoControleur(Structural) (nanoControleur.vhd), ROM_inst : ROM(Behavioral) (ROM.vhd)]", 4, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nanoControleur(Structural) (nanoControleur.vhd), ROM_inst : ROM(Behavioral) (ROM.vhd)]", 4, false, false, false, false, false, true); // D - Double Click
+// Elapsed time: 10 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nanoControleur(Structural) (nanoControleur.vhd), nPr_inst : nanoProcesseur(Structural) (nanoProcesseur.vhd)]", 3); // D
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2096 ms. Increasing delay to 6288 ms.
+// Elapsed time: 28 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Sync.vhd", 1); // m
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "nanoProcesseur.vhd", 0); // m
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nanoControleur(Structural) (nanoControleur.vhd), nPr_inst : nanoProcesseur(Structural) (nanoProcesseur.vhd), PC_inst : Program_Counter(Behavioral) (Program_Counter.vhd)]", 6, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nanoControleur(Structural) (nanoControleur.vhd), nPr_inst : nanoProcesseur(Structural) (nanoProcesseur.vhd), PC_inst : Program_Counter(Behavioral) (Program_Counter.vhd)]", 6, false, false, false, false, false, true); // D - Double Click
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 3411 ms. Increasing delay to 10233 ms.
+// Elapsed time: 20 seconds
+selectCodeEditor("Program_Counter.vhd", 459, 310); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 40 seconds
+selectCodeEditor("Program_Counter.vhd", 476, 315); // bP
+selectCodeEditor("Program_Counter.vhd", 488, 301); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: FILE_SET_CHANGE
+// WARNING: updateGUI() is taking  1583 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1615 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1655 ms. Decreasing delay to 3655 ms.
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 12 seconds
+selectCodeEditor("Program_Counter.vhd", 488, 301); // bP
+selectCodeEditor("Program_Counter.vhd", 37, 327); // bP
+typeControlKey((HResource) null, "Program_Counter.vhd", 'c'); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "nanoProcesseur.vhd", 0); // m
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1879 ms. Increasing delay to 5637 ms.
+selectCodeEditor("nanoProcesseur.vhd", 490, 302); // bP
+typeControlKey((HResource) null, "nanoProcesseur.vhd", 'v'); // bP
+selectCodeEditor("nanoProcesseur.vhd", 36, 347); // bP
+selectCodeEditor("nanoProcesseur.vhd", 651, 239); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("nanoProcesseur.vhd", 290, 475); // bP
+typeControlKey((HResource) null, "nanoProcesseur.vhd", 'v'); // bP
+selectCodeEditor("nanoProcesseur.vhd", 34, 386); // bP
+selectCodeEditor("nanoProcesseur.vhd", 179, 369); // bP
+selectCodeEditor("nanoProcesseur.vhd", 183, 384); // bP
+selectCodeEditor("nanoProcesseur.vhd", 301, 373); // bP
+selectCodeEditor("nanoProcesseur.vhd", 492, 392); // bP
+// Elapsed time: 10 seconds
+selectCodeEditor("nanoProcesseur.vhd", 124, 433); // bP
+selectCodeEditor("nanoProcesseur.vhd", 171, 376); // bP
+selectCodeEditor("nanoProcesseur.vhd", 351, 311); // bP
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 3319 ms. Increasing delay to 9957 ms.
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("nanoProcesseur.vhd", 516, 320); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 20 seconds
+selectCodeEditor("nanoProcesseur.vhd", 262, 257); // bP
+selectCodeEditor("nanoProcesseur.vhd", 326, 240); // bP
+selectCodeEditor("nanoProcesseur.vhd", 340, 228); // bP
+selectCodeEditor("nanoProcesseur.vhd", 207, 288); // bP
+// Elapsed time: 13 seconds
+selectCodeEditor("nanoProcesseur.vhd", 396, 205); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1460 ms.
+selectCodeEditor("nanoProcesseur.vhd", 437, 151); // bP
+// TclEventType: FILE_SET_CHANGE
+// WARNING: updateGUI() is taking  1561 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1603 ms.
+selectCodeEditor("nanoProcesseur.vhd", 400, 256); // bP

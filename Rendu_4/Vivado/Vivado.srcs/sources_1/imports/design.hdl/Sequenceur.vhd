@@ -37,7 +37,9 @@ entity Sequenceur is
     oper_load_o : out    std_logic;
     Accu_load_o : out    std_logic;
     CCR_load_o  : out    std_logic;
-    data_wr_o   : out    std_logic);
+    data_wr_o   : out    std_logic;
+    PushPop     : out    std_logic_vector(7 downto 0);
+    sInterupt   : in     std_logic);
 end entity Sequenceur;
 
 --------------------------------------------------------------------------------

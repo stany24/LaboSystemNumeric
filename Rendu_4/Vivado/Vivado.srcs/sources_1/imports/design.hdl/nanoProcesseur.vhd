@@ -36,7 +36,8 @@ entity nanoProcesseur is
     data_wr_o : out    std_logic;
     
     PushPop   : out    std_logic_vector(1 downto 0);
-    restore_i : in     std_logic_vector(7 downto 0));
+    restore_i : in     std_logic_vector(7 downto 0);
+    interupt  : in     std_logic);
 end entity nanoProcesseur;
 
 --------------------------------------------------------------------------------
@@ -64,6 +65,18 @@ architecture Structural of nanoProcesseur is
   signal loc_operande1 : std_logic_vector(7 downto 0);
   signal loc_operande2 : std_logic_vector(7 downto 0);
   signal loc_oper_load : std_logic;
+  
+  signal loc_sInterupt : std_logic;
+  signal loc_push_pop  : std_logic_vector(7 downto 0);
+  signal loc_restore   : std_logic;
+  
+  component Sync
+    port (
+      clk_i : in STD_LOGIC;
+      reset_i : in STD_LOGIC;
+      interupt : in STD_LOGIC;
+      sInterupt : out STD_LOGIC);
+  end component Sync;
 
   component Sequenceur
     port (
@@ -78,6 +91,8 @@ architecture Structural of nanoProcesseur is
       oper_load_o : out    std_logic;
       Accu_load_o : out    std_logic;
       CCR_load_o  : out    std_logic;
+      sInterupt   : in     std_logic;
+      PushPop     : out    std_logic_vector(7 downto 0);
       data_wr_o   : out    std_logic);
   end component Sequenceur;
 
@@ -88,7 +103,9 @@ architecture Structural of nanoProcesseur is
       PC_load_i : in     std_logic;
       PC_o      : out    std_logic_vector(7 downto 0);
       PC_inc_i  : in     std_logic;
-      addr_i    : in     std_logic_vector(7 downto 0));
+      addr_i    : in     std_logic_vector(7 downto 0);
+      restore_i : in     std_logic;
+      addr_restor_i : in std_logic_vector(7 downto 0));
   end component Program_Counter;
 
   component Instruction_Register
@@ -154,6 +171,14 @@ begin
   data_wr_o <= loc_data_wr;
   data_o <= loc_accu;
   addr_o <= loc_oper_addr;
+  PushPop <= loc_push_pop;
+  
+  sync1: Sync
+    port map(
+      clk_i =>clk_i,
+      reset_i =>reset_i,
+      interupt =>interupt,
+      sInterupt => loc_sInterupt);
 
   Seq_inst: Sequenceur
     port map(
@@ -168,6 +193,8 @@ begin
       oper_load_o => loc_oper_load,
       Accu_load_o => loc_Accu_load,
       CCR_load_o  => loc_CCR_load,
+      sInterupt   => loc_sInterupt,
+      PushPop     => loc_push_pop,
       data_wr_o   => loc_data_wr);
 
   PC_inst: Program_Counter
@@ -177,7 +204,9 @@ begin
       PC_load_i => loc_PC_load,
       PC_o      => PC_o,
       PC_inc_i  => loc_PC_inc,
-      addr_i    => loc_oper_addr);
+      addr_i    => loc_oper_addr,
+      restore_i => loc_restore,
+      addr_restor_i => retore_i);
 
   IR_inst: Instruction_Register
     port map(

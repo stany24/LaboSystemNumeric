@@ -21,3 +21,11 @@ move_files [get_files  C:/Users/Stan/Documents/Git/LaboSystemNumeric/Rendu_4/Viv
 update_compile_order -fileset sources_1
 update_compile_order -fileset sources_1
 update_compile_order -fileset sources_1
+close [ open C:/Users/Stan/Documents/Git/LaboSystemNumeric/Rendu_4/Vivado/Vivado.srcs/sources_1/new/Sync.vhd w ]
+add_files C:/Users/Stan/Documents/Git/LaboSystemNumeric/Rendu_4/Vivado/Vivado.srcs/sources_1/new/Sync.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
