@@ -69,6 +69,8 @@ architecture Structural of nanoProcesseur is
   signal loc_sInterupt : std_logic;
   signal loc_push_pop  : std_logic_vector(7 downto 0);
   signal loc_restore   : std_logic;
+  signal loc_accu_reload : std_logic_vector(7 downto 0);
+  signal loc_ccr_reload : std_logic_vector(3 downto 0);
   
   component Sync
     port (
@@ -77,6 +79,17 @@ architecture Structural of nanoProcesseur is
       interupt : in STD_LOGIC;
       sInterupt : out STD_LOGIC);
   end component Sync;
+  
+  component Registers
+    Port (
+      clk_i : in STD_LOGIC;
+      reset_i : in STD_LOGIC;
+      interupt : in STD_LOGIC;
+      CCR_i : in STD_LOGIC_VECTOR (3 downto 0);
+      Accu_i : in STD_LOGIC_VECTOR (7 downto 0);
+      CCR_o : out STD_LOGIC_VECTOR (3 downto 0);
+      Accu_o : out STD_LOGIC_VECTOR (7 downto 0));
+  end component Registers;
 
   component Sequenceur
     port (
@@ -144,7 +157,8 @@ architecture Structural of nanoProcesseur is
       reset_i    : in     std_logic;
       CCR_load_i : in     std_logic;
       CCR_i      : in     std_logic_vector(3 downto 0);
-      CCR_o      : out    std_logic_vector(3 downto 0));
+      CCR_o      : out    std_logic_vector(3 downto 0);
+      CCR_reload : in     std_logic_vector(3 downto 0));
   end component Status_Register;
 
   component W_Register
@@ -153,7 +167,9 @@ architecture Structural of nanoProcesseur is
       Accu_load_i : in     std_logic;
       Accu_o      : out    std_logic_vector(7 downto 0);
       clk_i       : in     std_logic;
-      reset_i     : in     std_logic);
+      reset_i     : in     std_logic;
+      Accu_reload : in     std_logic_vector(7 downto 0);
+      interupt    : in     std_logic);
   end component W_Register;
 
   component Operandes_Register
@@ -179,6 +195,16 @@ begin
       reset_i =>reset_i,
       interupt =>interupt,
       sInterupt => loc_sInterupt);
+      
+  registers1: Registers
+    port map (
+      clk_i => clk_i,
+      reset_i => reset_i,
+      interupt => loc_sInterupt,
+      CCR_i => loc_CCR,
+      Accu_i => loc_accu,
+      CCR_o => loc_CCR_reload,
+      Accu_o => loc_accu_reload);
 
   Seq_inst: Sequenceur
     port map(
@@ -206,7 +232,7 @@ begin
       PC_inc_i  => loc_PC_inc,
       addr_i    => loc_oper_addr,
       restore_i => loc_restore,
-      addr_restor_i => retore_i);
+      addr_restor_i => restore_i);
 
   IR_inst: Instruction_Register
     port map(
@@ -241,7 +267,8 @@ begin
       reset_i    => reset_i,
       CCR_load_i => loc_CCR_load,
       CCR_i      => loc_Z_C_V_N,
-      CCR_o      => loc_CCR);
+      CCR_o      => loc_CCR,
+      CCR_reload => loc_ccr_reload);
 
   WR_inst: W_Register
     port map(
@@ -249,7 +276,9 @@ begin
       Accu_load_i => loc_Accu_load,
       Accu_o      => loc_accu,
       clk_i       => clk_i,
-      reset_i     => reset_i);
+      reset_i     => reset_i,
+      Accu_reload => loc_accu_reload,
+      interupt    => interupt);
 
   OR_inst: Operandes_Register
     port map(

@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "C:/Users/Stan/Documents/Git/LaboSystemNumeric/Rendu_2/Vivado/Vivado.runs/impl_1/nanoControleur.tcl"
+  variable script "C:/Users/Stan/Documents/Git/LaboSystemNumeric/Rendu_4/Vivado/Vivado.runs/impl_1/nanoControleur.tcl"
   variable category "vivado_impl"
 }
 
@@ -123,22 +123,21 @@ set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 4
-  set_param xicom.use_bs_reader 1
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7a35tfgg484-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir C:/Users/Stan/Documents/Git/LaboSystemNumeric/Rendu_2/Vivado/Vivado.cache/wt [current_project]
-  set_property parent.project_path C:/Users/Stan/Documents/Git/LaboSystemNumeric/Rendu_2/Vivado/Vivado.xpr [current_project]
-  set_property ip_output_repo C:/Users/Stan/Documents/Git/LaboSystemNumeric/Rendu_2/Vivado/Vivado.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/Users/Stan/Documents/Git/LaboSystemNumeric/Rendu_4/Vivado/Vivado.cache/wt [current_project]
+  set_property parent.project_path C:/Users/Stan/Documents/Git/LaboSystemNumeric/Rendu_4/Vivado/Vivado.xpr [current_project]
+  set_property ip_output_repo C:/Users/Stan/Documents/Git/LaboSystemNumeric/Rendu_4/Vivado/Vivado.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet C:/Users/Stan/Documents/Git/LaboSystemNumeric/Rendu_2/Vivado/Vivado.runs/synth_1/nanoControleur.dcp
+  add_files -quiet C:/Users/Stan/Documents/Git/LaboSystemNumeric/Rendu_4/Vivado/Vivado.runs/synth_1/nanoControleur.dcp
 OPTRACE "read constraints: implementation" START { }
-  read_xdc C:/Users/Stan/Documents/Git/LaboSystemNumeric/Rendu_2/Vivado/Vivado.srcs/constrs_1/imports/new/IO_Const.xdc
+  read_xdc C:/Users/Stan/Documents/Git/LaboSystemNumeric/Rendu_4/Vivado/Vivado.srcs/constrs_1/imports/new/IO_Const.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "add files" END { }
 OPTRACE "link_design" START { }
