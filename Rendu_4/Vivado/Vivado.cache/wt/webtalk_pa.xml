@@ -47,6 +47,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="BaseDialog_OK" value="40" type="GuiHandlerData"/>
 <property name="BaseDialog_YES" value="1" type="GuiHandlerData"/>
 <property name="CmdMsgDialog_OK" value="7" type="GuiHandlerData"/>
+<property name="ConfirmSaveTextEditsDialog_CANCEL" value="1" type="GuiHandlerData"/>
 <property name="ConstraintsChooserPanel_ADD_FILES" value="1" type="GuiHandlerData"/>
 <property name="ConstraintsChooserPanel_COPY_CONSTRAINTS_FILES_INTO_PROJECT" value="1" type="GuiHandlerData"/>
 <property name="CreateSrcFileDialog_FILE_NAME" value="3" type="GuiHandlerData"/>
@@ -59,6 +60,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="GettingStartedView_OPEN_PROJECT" value="1" type="GuiHandlerData"/>
 <property name="GraphicalView_ZOOM_FIT" value="31" type="GuiHandlerData"/>
 <property name="GraphicalView_ZOOM_OUT" value="3" type="GuiHandlerData"/>
+<property name="HCodeEditor_SEARCH_TEXT_COMBO_BOX" value="1" type="GuiHandlerData"/>
 <property name="MainMenuMgr_FILE" value="2" type="GuiHandlerData"/>
 <property name="MainMenuMgr_PROJECT" value="1" type="GuiHandlerData"/>
 <property name="MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN" value="4" type="GuiHandlerData"/>
