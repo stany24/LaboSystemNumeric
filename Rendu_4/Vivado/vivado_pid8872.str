@@ -347,3 +347,73 @@ selectCodeEditor("nanoControleur.vhd", 296, 297); // bP
 selectCodeEditor("nanoControleur.vhd", 296, 297); // bP
 // TclEventType: DG_GRAPH_STALE
 // TclEventType: FILE_SET_CHANGE
+// Elapsed time: 142 seconds
+selectCodeEditor("nanoControleur.vhd", 478, 203); // bP
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "nanoProcesseur.vhd", 0); // m
+// Elapsed time: 18 seconds
+selectCodeEditor("nanoProcesseur.vhd", 324, 368); // bP
+// Elapsed time: 36 seconds
+selectCodeEditor("nanoProcesseur.vhd", 466, 368); // bP
+// Elapsed time: 22 seconds
+selectCodeEditor("nanoProcesseur.vhd", 532, 381); // bP
+selectCodeEditor("nanoProcesseur.vhd", 490, 407); // bP
+selectCodeEditor("nanoProcesseur.vhd", 547, 374); // bP
+selectCodeEditor("nanoProcesseur.vhd", 479, 430); // bP
+selectCodeEditor("nanoProcesseur.vhd", 535, 409); // bP
+selectCodeEditor("nanoProcesseur.vhd", 453, 430); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 17 seconds
+selectCodeEditor("nanoProcesseur.vhd", 509, 411); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("nanoProcesseur.vhd", 471, 164); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "nanoControleur.vhd", 1); // m
+// Elapsed time: 12 seconds
+selectCodeEditor("nanoControleur.vhd", 371, 412); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "nanoProcesseur.vhd", 0); // m
+selectCodeEditor("nanoProcesseur.vhd", 477, 299); // bP
+typeControlKey((HResource) null, "nanoProcesseur.vhd", 'c'); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "nanoControleur.vhd", 1); // m
+selectCodeEditor("nanoControleur.vhd", 223, 459); // bP
+typeControlKey((HResource) null, "nanoControleur.vhd", 'v'); // bP
+selectCodeEditor("nanoControleur.vhd", 35, 474); // bP
+selectCodeEditor("nanoControleur.vhd", 444, 399); // bP
+selectCodeEditor("nanoControleur.vhd", 232, 486); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 36 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "nanoProcesseur.vhd", 0); // m
+// Elapsed time: 10 seconds
+selectCodeEditor("nanoProcesseur.vhd", 132, 316); // bP
+// Elapsed time: 19 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "nanoControleur.vhd", 1); // m
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "nanoProcesseur.vhd", 0); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "nanoControleur.vhd", 1); // m
+selectCodeEditor("nanoControleur.vhd", 122, 405); // bP
+// Elapsed time: 22 seconds
+selectCodeEditor("nanoControleur.vhd", 180, 352); // bP
+selectCodeEditor("nanoControleur.vhd", 255, 307); // bP
+selectCodeEditor("nanoControleur.vhd", 334, 329); // bP
+selectCodeEditor("nanoControleur.vhd", 362, 302); // bP
+selectCodeEditor("nanoControleur.vhd", 340, 232); // bP
+selectCodeEditor("nanoControleur.vhd", 328, 344); // bP
+selectCodeEditor("nanoControleur.vhd", 407, 228); // bP
+selectCodeEditor("nanoControleur.vhd", 372, 294); // bP
+selectCodeEditor("nanoControleur.vhd", 380, 291); // bP
+// HMemoryUtils.trashcanNow. Engine heap size: 1,011 MB. GUI used memory: 160 MB. Current time: 5/19/24, 4:29:07 PM CEST
+// Elapsed time: 24 seconds
+selectCodeEditor("nanoControleur.vhd", 376, 234); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1643 ms. Decreasing delay to 3643 ms.

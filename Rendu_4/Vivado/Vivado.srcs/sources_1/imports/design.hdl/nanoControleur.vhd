@@ -78,7 +78,10 @@ architecture Structural of nanoControleur is
       addr_o    : out    std_logic_vector(7  downto 0);
       data_i    : in     std_logic_vector(7  downto 0);
       data_o    : out    std_logic_vector(7  downto 0);
-      data_wr_o : out    std_logic);
+      data_wr_o : out    std_logic;
+      
+      PushPop   : out    std_logic_vector(1 downto 0);
+      restore_i : in     std_logic_vector(7 downto 0));
   end component nanoProcesseur;
 
   component ROM
@@ -148,7 +151,9 @@ begin
       addr_o    => loc_addr_o,
       data_i    => loc_data_i,
       data_o    => loc_data_o,
-      data_wr_o => loc_wr);
+      data_wr_o => loc_wr,
+      PushPop   => loc_push_pop,
+      restore_i =>  loc_addr_restore);
 
   ROM_inst: ROM
     port map(

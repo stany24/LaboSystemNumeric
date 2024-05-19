@@ -33,7 +33,10 @@ entity nanoProcesseur is
     addr_o    : out    std_logic_vector(7  downto 0);
     data_i    : in     std_logic_vector(7  downto 0);
     data_o    : out    std_logic_vector(7  downto 0);
-    data_wr_o : out    std_logic);
+    data_wr_o : out    std_logic;
+    
+    PushPop   : out    std_logic_vector(1 downto 0);
+    restore_i : in     std_logic_vector(7 downto 0));
 end entity nanoProcesseur;
 
 --------------------------------------------------------------------------------
