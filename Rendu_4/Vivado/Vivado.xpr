@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="54" Path="C:/Users/Stan/Documents/Git/LaboSystemNumeric/Rendu_2/Vivado/Vivado.xpr">
+<Project Version="7" Minor="54" Path="C:/Users/Stan/Documents/Git/LaboSystemNumeric/Rendu_4/Vivado/Vivado.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="59e4eea8557c45008183b1543f1ea080"/>
@@ -167,6 +167,12 @@
         <FileInfo>
           <Attr Name="ImportPath" Val="P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/EASE/nanoprocesseur_v4.ews/design.hdl/Sequenceur.vhd"/>
           <Attr Name="ImportTime" Val="1704216346"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/Stack.vhd">
+        <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>

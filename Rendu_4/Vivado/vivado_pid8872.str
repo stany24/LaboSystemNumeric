@@ -1,0 +1,349 @@
+/*
+
+Xilinx Vivado v2020.2 (64-bit) [Major: 2020, Minor: 2]
+SW Build: 3064766 on Wed Nov 18 09:12:45 MST 2020
+IP Build: 3064653 on Wed Nov 18 14:17:31 MST 2020
+
+Process ID (PID): 8872
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Sun May 19 13:44:19 CEST 2024
+Time zone: 	Central European Standard Time (Europe/Paris)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 16
+
+Screen size: 1920x1080
+Screen resolution (DPI): 125
+Available screens: 1
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=15
+Scale size: 19
+
+Java version: 	11.0.2 64-bit
+Java home: 	C:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2
+Java executable location: 	C:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Stan
+User home directory: C:/Users/Stan
+User working directory: C:/Users/Stan/Documents/Git/LaboSystemNumeric/Rendu_4/Vivado
+User country: 	CH
+User language: 	fr
+User locale: 	fr_CH
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2020.2
+RDI_DATADIR: C:/Xilinx/Vivado/2020.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2020.2/bin
+
+Vivado preferences file location: C:/Users/Stan/AppData/Roaming/Xilinx/Vivado/2020.2/vivado.xml
+Vivado preferences directory: C:/Users/Stan/AppData/Roaming/Xilinx/Vivado/2020.2/
+Vivado layouts directory: C:/Users/Stan/AppData/Roaming/Xilinx/Vivado/2020.2/data/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2020.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/Stan/Documents/Git/LaboSystemNumeric/Rendu_4/Vivado/vivado.log
+Vivado journal file location: 	C:/Users/Stan/Documents/Git/LaboSystemNumeric/Rendu_4/Vivado/vivado.jou
+Engine tmp dir: 	C:/Users/Stan/Documents/Git/LaboSystemNumeric/Rendu_4/Vivado/.Xil/Vivado-8872-DESKTOP-GGBBNKF
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_HLS: C:/Xilinx/Vitis_HLS/2020.2
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2020.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2020.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2020.2
+
+
+GUI allocated memory:	129 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,011 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: C:\Users\Stan\Documents\Git\LaboSystemNumeric\Rendu_4\Vivado\Vivado.xpr. Version: Vivado v2020.2 
+// bz (cr):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/Stan/Documents/Git/LaboSystemNumeric/Rendu_4/Vivado/Vivado.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/Stan/Documents/Git/LaboSystemNumeric/Rendu_4/Vivado/Vivado.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/Stan/Documents/Git/LaboSystemNumeric/Rendu_2/Vivado' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,011 MB. GUI used memory: 55 MB. Current time: 5/19/24, 1:44:20 PM CEST
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 73 MB (+74590kb) [00:00:22]
+// [Engine Memory]: 1,011 MB (+908388kb) [00:00:22]
+// [GUI Memory]: 95 MB (+18666kb) [00:00:23]
+// [GUI Memory]: 111 MB (+12290kb) [00:00:25]
+// WARNING: HEventQueue.dispatchEvent() is taking  6138 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:28 ; elapsed = 00:00:11 . Memory (MB): peak = 1005.328 ; gain = 0.000 
+// Project name: Vivado; location: C:/Users/Stan/Documents/Git/LaboSystemNumeric/Rendu_4/Vivado; part: xc7a35tfgg484-1
+dismissDialog("Open Project"); // bz
+// [GUI Memory]: 117 MB (+254kb) [00:00:30]
+// Tcl Message: update_compile_order -fileset sources_1 
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 31085 ms. Increasing delay to 93255 ms.
+// [GUI Memory]: 130 MB (+7250kb) [00:05:22]
+// WARNING: HTimer (MainWindowUtils Timer) is taking 7435708ms to process. Increasing delay to 11000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  7436291 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,011 MB. GUI used memory: 76 MB. Current time: 5/19/24, 3:59:07 PM CEST
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 32 ms. Decreasing delay to 2032 ms.
+// Elapsed time: 8284 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nanoControleur(Structural) (nanoControleur.vhd)]", 1); // D
+// PAPropertyPanels.initPanels (ROM.vhd) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nanoControleur(Structural) (nanoControleur.vhd), ROM_inst : ROM(Behavioral) (ROM.vhd)]", 3, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nanoControleur(Structural) (nanoControleur.vhd), ROM_inst : ROM(Behavioral) (ROM.vhd)]", 3, false, false, false, false, false, true); // D - Double Click
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 21956 ms. Increasing delay to 65868 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 52001 ms. Increasing delay to 156003 ms.
+// Elapsed time: 361 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nanoControleur(Structural) (nanoControleur.vhd), ROM_inst : ROM(Behavioral) (ROM.vhd)]", 3, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nanoControleur(Structural) (nanoControleur.vhd), ROM_inst : ROM(Behavioral) (ROM.vhd)]", 3, false, false, false, false, false, true); // D - Double Click
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nanoControleur(Structural) (nanoControleur.vhd), Data_Mux_inst : Data_Multiplexer(Behavioral) (Data_Multiplexer.vhd)]", 4, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nanoControleur(Structural) (nanoControleur.vhd), Data_Mux_inst : Data_Multiplexer(Behavioral) (Data_Multiplexer.vhd)]", 4, false, false, false, false, false, true); // D - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nanoControleur(Structural) (nanoControleur.vhd), RAM_inst : RAM(Behavioral) (RAM.vhd)]", 5, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nanoControleur(Structural) (nanoControleur.vhd), RAM_inst : RAM(Behavioral) (RAM.vhd)]", 5, false, false, false, false, false, true); // D - Double Click
+// Elapsed time: 73 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nanoControleur(Structural) (nanoControleur.vhd), Port_a_Out_inst : Output_Register(Behavioral) (Output_Register.vhd)]", 6, false); // D
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nanoControleur(Structural) (nanoControleur.vhd), Port_a_Out_inst : Output_Register(Behavioral) (Output_Register.vhd)]", 6, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nanoControleur(Structural) (nanoControleur.vhd), Port_a_Out_inst : Output_Register(Behavioral) (Output_Register.vhd)]", 6, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("Output_Register.vhd", 447, 144); // bP
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nanoControleur(Structural) (nanoControleur.vhd), Add_Dec_inst : Address_Decode(behavioral) (Address_Decode.vhd)]", 8, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nanoControleur(Structural) (nanoControleur.vhd), Add_Dec_inst : Address_Decode(behavioral) (Address_Decode.vhd)]", 8, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nanoControleur(Structural) (nanoControleur.vhd), Add_Dec_inst : Address_Decode(behavioral) (Address_Decode.vhd)]", 8, false, false, false, false, false, true); // D - Double Click
+// Elapsed time: 17 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nanoControleur(Structural) (nanoControleur.vhd)]", 1, true, false, false, false, true, false); // D - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ah
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ah
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ak
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton
+// Elapsed time: 11 seconds
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "Stack"); // aa
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Tcl Command: 'file mkdir C:/Users/Stan/Documents/Git/LaboSystemNumeric/Rendu_4/Vivado/Vivado.srcs/sources_1/new'
+dismissDialog("Create Source File"); // F
+// Tcl Message: file mkdir C:/Users/Stan/Documents/Git/LaboSystemNumeric/Rendu_4/Vivado/Vivado.srcs/sources_1/new 
+selectButton("FINISH", "Finish"); // JButton
+// 'g' command handler elapsed time: 21 seconds
+dismissDialog("Add Sources"); // c
+// Tcl Message: close [ open C:/Users/Stan/Documents/Git/LaboSystemNumeric/Rendu_4/Vivado/Vivado.srcs/sources_1/new/Stack.vhd w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/Stan/Documents/Git/LaboSystemNumeric/Rendu_4/Vivado/Vivado.srcs/sources_1/new/Stack.vhd 
+// I (cr): Define Module: addNotify
+setText(PAResourceAtoD.DefineModulesDialog_ENTITY_NAME, "Stack"); // aa
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; in ; false ; 0 ; 0", 0, (String) null, 0); // ab
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "addr_i", 0, "Port Name", 0); // ab
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "addr_i ; in ; false ; 0 ; 0", 0, "false", 2); // ab
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "addr_i ; in ; true ; 0 ; 0", 0, "0", 3); // ab
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "0", 0, "MSB", 3); // ab
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "addr_i ; in ; true ; 0 ; 0", 0, "0", 4); // ab
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "7", 0, "LSB", 4); // ab
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "push_pop_i", 1, "Port Name", 0); // ab
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "push_pop_i ; in ; false ; 0 ; 0", 1, "false", 2); // ab
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "push_pop_i ; in ; true ; 0 ; 0", 1, "0", 4); // ab
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "1", 1, "LSB", 4); // ab
+selectButton(RDIResource.AbstractCombinedPanel_ADD_ELEMENT, "Add Definition"); // E
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; in ; false ; 0 ; 0", 2, (String) null, 0); // ab
+selectButton(RDIResource.AbstractCombinedPanel_ADD_ELEMENT, "Add Definition"); // E
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "clk_i", 2, "Port Name", 0); // ab
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; in ; false ; 0 ; 0", 3, (String) null, 0); // ab
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "reset_i", 3, "Port Name", 0); // ab
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "interupt", 4, "Port Name", 0); // ab
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "addr_o", 5, "Port Name", 0); // ab
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "addr_o ; in ; false ; 0 ; 0", 5, "in", 1); // ab
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "out", 5, "Direction", 1); // ab
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "addr_o ; out ; false ; 0 ; 0", 5, "false", 2); // ab
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "addr_o ; out ; true ; 0 ; 0", 5, "0", 4); // ab
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "7", 5, "LSB", 4); // ab
+// [GUI Memory]: 149 MB (+12717kb) [02:28:28]
+dismissDialog("Define Module"); // I
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 160 MB (+3663kb) [02:28:36]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// RDIResource.RDIViews_PROPERTIES: Source File Properties: close view
+// Elapsed time: 20 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Stack(Behavioral) (Stack.vhd)]", 9, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Stack(Behavioral) (Stack.vhd)]", 9, false); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 11); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 12); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Utility Sources]", 15); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 10); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 10); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 11); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Utility Sources]", 12); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Stack(Behavioral) (Stack.vhd)]", 9, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nanoControleur(Structural) (nanoControleur.vhd), nPr_inst : nanoProcesseur(Structural) (nanoProcesseur.vhd)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nanoControleur(Structural) (nanoControleur.vhd), nPr_inst : nanoProcesseur(Structural) (nanoProcesseur.vhd)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Stack(Behavioral) (Stack.vhd)]", 17, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Stack(Behavioral) (Stack.vhd)]", 17, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Stack(Behavioral) (Stack.vhd)]", 17, false, false, false, false, true, false); // D - Popup Trigger
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ah
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ah
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ah
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ah
+selectMenuItem(PAResourceCommand.PACommandNames_MOVE_TO_SIM_SET, "Move to Simulation Sources"); // ak
+// Run Command: PAResourceCommand.PACommandNames_MOVE_TO_SIM_SET
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: move_files -fileset sim_1 [get_files  C:/Users/Stan/Documents/Git/LaboSystemNumeric/Rendu_4/Vivado/Vivado.srcs/sources_1/new/Stack.vhd] 
+// Elapsed time: 16 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nanoControleur(Structural) (nanoControleur.vhd), nPr_inst : nanoProcesseur(Structural) (nanoProcesseur.vhd)]", 2); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nanoControleur(Structural) (nanoControleur.vhd), nPr_inst : nanoProcesseur(Structural) (nanoProcesseur.vhd)]", 2); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nanoControleur(Structural) (nanoControleur.vhd), nPr_inst : nanoProcesseur(Structural) (nanoProcesseur.vhd)]", 2); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 10); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 11); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Stack(Behavioral) (Stack.vhd)]", 13, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Stack(Behavioral) (Stack.vhd)]", 13, false, false, false, false, true, false); // D - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_MOVE_TO_DESIGN_SET, "Move to Design Sources"); // ak
+// Run Command: PAResourceCommand.PACommandNames_MOVE_TO_DESIGN_SET
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: move_files [get_files  C:/Users/Stan/Documents/Git/LaboSystemNumeric/Rendu_4/Vivado/Vivado.srcs/sources_1/new/Stack.vhd] 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Stack(Behavioral) (Stack.vhd)]", 9, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Stack(Behavioral) (Stack.vhd)]", 9, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Stack(Behavioral) (Stack.vhd)]", 9, false, false, false, false, true, false); // D - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ah
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ah
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ah
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ah
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nanoControleur(Structural) (nanoControleur.vhd)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nanoControleur(Structural) (nanoControleur.vhd)]", 1, true, false, false, false, false, true); // D - Double Click - Node
+selectCodeEditor("nanoControleur.vhd", 328, 177); // bP
+// Elapsed time: 21 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Stack(Behavioral) (Stack.vhd)]", 2, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Stack(Behavioral) (Stack.vhd)]", 2, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("Stack.vhd", 37, 246); // bP
+typeControlKey((HResource) null, "Stack.vhd", 'c'); // bP
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nanoControleur(Structural) (nanoControleur.vhd)]", 1, true); // D - Node
+// [GUI Memory]: 168 MB (+549kb) [02:30:37]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nanoControleur(Structural) (nanoControleur.vhd)]", 1, true, false, false, false, false, true); // D - Double Click - Node
+selectCodeEditor("nanoControleur.vhd", 15, 368); // bP
+typeControlKey((HResource) null, "nanoControleur.vhd", 'v'); // bP
+selectCodeEditor("nanoControleur.vhd", 16, 241); // bP
+selectCodeEditor("nanoControleur.vhd", 154, 267); // bP
+selectCodeEditor("nanoControleur.vhd", 117, 248); // bP
+selectCodeEditor("nanoControleur.vhd", 131, 289); // bP
+selectCodeEditor("nanoControleur.vhd", 95, 325); // bP
+selectCodeEditor("nanoControleur.vhd", 54, 247); // bP
+selectCodeEditor("nanoControleur.vhd", 72, 255); // bP
+selectCodeEditor("nanoControleur.vhd", 174, 219); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("nanoControleur.vhd", 269, 158); // bP
+// Elapsed time: 11 seconds
+typeControlKey((HResource) null, "nanoControleur.vhd", 'v'); // bP
+selectCodeEditor("nanoControleur.vhd", 53, 95); // bP
+selectCodeEditor("nanoControleur.vhd", 24, 98); // bP
+selectCodeEditor("nanoControleur.vhd", 16, 98); // bP
+selectCodeEditor("nanoControleur.vhd", 20, 121); // bP
+selectCodeEditor("nanoControleur.vhd", 64, 134); // bP
+selectCodeEditor("nanoControleur.vhd", 143, 67); // bP
+selectCodeEditor("nanoControleur.vhd", 111, 284); // bP
+selectCodeEditor("nanoControleur.vhd", 58, 454); // bP
+selectCodeEditor("nanoControleur.vhd", 176, 454); // bP
+selectCodeEditor("nanoControleur.vhd", 250, 413); // bP
+selectCodeEditor("nanoControleur.vhd", 95, 208); // bP
+typeControlKey(null, null, 'z');
+selectCodeEditor("nanoControleur.vhd", 273, 158); // bP
+selectCodeEditor("nanoControleur.vhd", 385, 115); // bP
+selectCodeEditor("nanoControleur.vhd", 408, 115); // bP
+selectCodeEditor("nanoControleur.vhd", 476, 140); // bP
+selectCodeEditor("nanoControleur.vhd", 283, 161); // bP
+selectCodeEditor("nanoControleur.vhd", 261, 170); // bP
+selectCodeEditor("nanoControleur.vhd", 291, 195); // bP
+selectCodeEditor("nanoControleur.vhd", 437, 221); // bP
+// Elapsed time: 19 seconds
+selectCodeEditor("nanoControleur.vhd", 170, 225); // bP
+selectCodeEditor("nanoControleur.vhd", 267, 112); // bP
+// Elapsed time: 49 seconds
+selectCodeEditor("nanoControleur.vhd", 309, 127); // bP
+// Elapsed time: 11 seconds
+selectCodeEditor("nanoControleur.vhd", 327, 305); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 40 seconds
+selectCodeEditor("nanoControleur.vhd", 175, 369); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// WARNING: HEventQueue.dispatchEvent() is taking  1200 ms.
+selectCodeEditor("nanoControleur.vhd", 327, 290); // bP
+selectCodeEditor("nanoControleur.vhd", 180, 360); // bP
+// Elapsed time: 45 seconds
+selectCodeEditor("nanoControleur.vhd", 499, 342); // bP
+typeControlKey((HResource) null, "nanoControleur.vhd", 'c'); // bP
+selectCodeEditor("nanoControleur.vhd", 519, 344); // bP
+typeControlKey((HResource) null, "nanoControleur.vhd", 'v'); // bP
+selectCodeEditor("nanoControleur.vhd", 187, 371); // bP
+// Elapsed time: 12 seconds
+selectCodeEditor("nanoControleur.vhd", 413, 371); // bP
+selectCodeEditor("nanoControleur.vhd", 226, 364); // bP
+typeControlKey((HResource) null, "nanoControleur.vhd", 'c'); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("nanoControleur.vhd", 153, 353); // bP
+typeControlKey((HResource) null, "nanoControleur.vhd", 'v'); // bP
+selectCodeEditor("nanoControleur.vhd", 336, 289); // bP
+selectCodeEditor("nanoControleur.vhd", 372, 251); // bP
+selectCodeEditor("nanoControleur.vhd", 154, 353); // bP
+selectCodeEditor("nanoControleur.vhd", 298, 307); // bP
+selectCodeEditor("nanoControleur.vhd", 377, 283); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 52 seconds
+selectCodeEditor("nanoControleur.vhd", 476, 372); // bP
+// Elapsed time: 14 seconds
+selectCodeEditor("nanoControleur.vhd", 650, 291); // bP
+selectCodeEditor("nanoControleur.vhd", 458, 310); // bP
+selectCodeEditor("nanoControleur.vhd", 555, 289); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("nanoControleur.vhd", 175, 305); // bP
+selectCodeEditor("nanoControleur.vhd", 64, 363); // bP
+selectCodeEditor("nanoControleur.vhd", 222, 321); // bP
+selectCodeEditor("nanoControleur.vhd", 296, 297); // bP
+selectCodeEditor("nanoControleur.vhd", 296, 297); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
