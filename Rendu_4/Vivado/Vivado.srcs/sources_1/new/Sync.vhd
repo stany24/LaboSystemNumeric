@@ -42,5 +42,14 @@ architecture Behavioral of Sync is
 
 begin
 
+process(clk_i)
+begin
+  if reset_i = '0' then
+    sInterupt <= '1';
+  elsif rising_edge(clk_i) then
+    sInterupt <= interupt;
+  end if;
+end process;
+
 
 end Behavioral;
