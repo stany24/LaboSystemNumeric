@@ -66,9 +66,12 @@ package nanoProcesseur_package is
   constant BV0        : std_logic_vector(5 downto 0) := "011110";
   constant BV1        : std_logic_vector(5 downto 0) := "011111";       
   constant BN0        : std_logic_vector(5 downto 0) := "100000";       
-  constant BN1        : std_logic_vector(5 downto 0) := "100001";       
-  constant BRA        : std_logic_vector(5 downto 0) := "100010";  
+  constant BN1        : std_logic_vector(5 downto 0) := "100001";
+  constant BRA        : std_logic_vector(5 downto 0) := "100010";
   constant NOP        : std_logic_vector(5 downto 0) := "111111";
+  constant CallFunc   : std_logic_vector(5 downto 0) := "100011";
+  constant ReturnFunc : std_logic_vector(5 downto 0) := "100100";
+  constant ReturnInterupt : std_logic_vector(5 downto 0) := "100101";
 
   -- Selection des opérandes
   constant MUX_ACCU          : std_logic_vector(2 downto 0) := "000";

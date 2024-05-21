@@ -1,0 +1,135 @@
+/*
+
+Xilinx Vivado v2020.2 (64-bit) [Major: 2020, Minor: 2]
+SW Build: 3064766 on Wed Nov 18 09:12:45 MST 2020
+IP Build: 3064653 on Wed Nov 18 14:17:31 MST 2020
+
+Process ID (PID): 23824
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Tue May 21 10:54:42 CEST 2024
+Time zone: 	Central European Standard Time (Europe/Berlin)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 12
+
+Screen size: 1920x1080
+Screen resolution (DPI): 125
+Available screens: 1
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=15
+Scale size: 19
+
+Java version: 	11.0.2 64-bit
+Java home: 	C:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2
+Java executable location: 	C:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	gabdo
+User home directory: C:/Users/gabdo
+User working directory: C:/Users/gabdo/OneDrive - HE-ARC/Documents/HeArc/ISC1b/systemes_numériques/LaboSystemNumeric/Rendu_4/Vivado
+User country: 	CH
+User language: 	fr
+User locale: 	fr_CH
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2020.2
+RDI_DATADIR: C:/Xilinx/Vivado/2020.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2020.2/bin
+
+Vivado preferences file location: C:/Users/gabdo/AppData/Roaming/Xilinx/Vivado/2020.2/vivado.xml
+Vivado preferences directory: C:/Users/gabdo/AppData/Roaming/Xilinx/Vivado/2020.2/
+Vivado layouts directory: C:/Users/gabdo/AppData/Roaming/Xilinx/Vivado/2020.2/data/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2020.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/gabdo/OneDrive - HE-ARC/Documents/HeArc/ISC1b/systemes_numériques/LaboSystemNumeric/Rendu_4/Vivado/vivado.log
+Vivado journal file location: 	C:/Users/gabdo/OneDrive - HE-ARC/Documents/HeArc/ISC1b/systemes_numériques/LaboSystemNumeric/Rendu_4/Vivado/vivado.jou
+Engine tmp dir: 	C:/Users/gabdo/OneDrive - HE-ARC/Documents/HeArc/ISC1b/systemes_numériques/LaboSystemNumeric/Rendu_4/Vivado/.Xil/Vivado-23824-codexis-school-laptop
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINXD_LICENSE_FILE: 2100@SRV-Lic1
+XILINX_DSP: C:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_HLS: C:/Xilinx/Vitis_HLS/2020.2
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2020.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2020.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2020.2
+
+
+GUI allocated memory:	132 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,011 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bz (cr):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\gabdo\OneDrive - HE-ARC\Documents\HeArc\ISC1b\systemes_numériques\LaboSystemNumeric\Rendu_4\Vivado\Vivado.xpr. Version: Vivado v2020.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {C:/Users/gabdo/OneDrive - HE-ARC/Documents/HeArc/ISC1b/systemes_numériques/LaboSystemNumeric/Rendu_4/Vivado/Vivado.xpr} 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/gabdo/OneDrive - HE-ARC/Documents/HeArc/ISC1b/systemes_numériques/LaboSystemNumeric/Rendu_4/Vivado' 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {C:/Users/gabdo/OneDrive - HE-ARC/Documents/HeArc/ISC1b/systemes_numériques/LaboSystemNumeric/Rendu_4/Vivado/Vivado.xpr} 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/gabdo/OneDrive - HE-ARC/Documents/HeArc/ISC1b/systemes_numériques/LaboSystemNumeric/Rendu_4/Vivado' INFO: [Project 1-313] Project file moved from 'C:/Users/Stan/Documents/Git/LaboSystemNumeric/Rendu_2/Vivado' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,011 MB. GUI used memory: 54 MB. Current time: 5/21/24, 10:54:43 AM CEST
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 72 MB (+73034kb) [00:00:22]
+// [Engine Memory]: 1,011 MB (+908159kb) [00:00:22]
+// [GUI Memory]: 94 MB (+18744kb) [00:00:23]
+// [GUI Memory]: 111 MB (+13389kb) [00:00:25]
+// WARNING: HEventQueue.dispatchEvent() is taking  6170 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 1008.586 ; gain = 0.000 
+// Project name: Vivado; location: C:/Users/gabdo/OneDrive - HE-ARC/Documents/HeArc/ISC1b/systemes_numériques/LaboSystemNumeric/Rendu_4/Vivado; part: xc7a35tfgg484-1
+dismissDialog("Open Project"); // bz
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 0); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 0); // D
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 0); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 0); // D
+// [GUI Memory]: 125 MB (+8661kb) [00:00:33]
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Utility Sources]", 1); // D
+// PAPropertyPanels.initPanels (utils_1) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Utility Sources, utils_1]", 2, false); // D
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nanoControleur(Structural) (nanoControleur.vhd)]", 1); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nanoControleur(Structural) (nanoControleur.vhd), nPr_inst : nanoProcesseur(Structural) (nanoProcesseur.vhd)]", 2); // D
+// [GUI Memory]: 138 MB (+7570kb) [00:00:38]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nanoControleur(Structural) (nanoControleur.vhd), nPr_inst : nanoProcesseur(Structural) (nanoProcesseur.vhd), Seq_inst : Sequenceur(Behavioral) (Sequenceur.vhd)]", 3, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nanoControleur(Structural) (nanoControleur.vhd), nPr_inst : nanoProcesseur(Structural) (nanoProcesseur.vhd), Seq_inst : Sequenceur(Behavioral) (Sequenceur.vhd)]", 3, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("Sequenceur.vhd", 371, 73); // bP
+selectCodeEditor("Sequenceur.vhd", 492, 135); // bP
+selectCodeEditor("Sequenceur.vhd", 186, 301); // bP

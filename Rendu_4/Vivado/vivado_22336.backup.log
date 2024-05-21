@@ -2,10 +2,10 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Tue May 21 10:54:08 2024
-# Process ID: 23824
+# Start of session at: Sun May 19 16:05:04 2024
+# Process ID: 22336
 # Current directory: C:/Users/gabdo/OneDrive - HE-ARC/Documents/HeArc/ISC1b/systemes_numériques/LaboSystemNumeric/Rendu_4/Vivado
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15608 C:\Users\gabdo\OneDrive - HE-ARC\Documents\HeArc\ISC1b\systemes_numériques\LaboSystemNumeric\Rendu_4\Vivado\Vivado.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12292 C:\Users\gabdo\OneDrive - HE-ARC\Documents\HeArc\ISC1b\systemes_numériques\LaboSystemNumeric\Rendu_4\Vivado\Vivado.xpr
 # Log file: C:/Users/gabdo/OneDrive - HE-ARC/Documents/HeArc/ISC1b/systemes_numériques/LaboSystemNumeric/Rendu_4/Vivado/vivado.log
 # Journal file: C:/Users/gabdo/OneDrive - HE-ARC/Documents/HeArc/ISC1b/systemes_numériques/LaboSystemNumeric/Rendu_4/Vivado\vivado.jou
 #-----------------------------------------------------------
@@ -20,5 +20,7 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
-open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 1008.586 ; gain = 0.000
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1005.961 ; gain = 0.000
 update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun May 19 16:45:39 2024...

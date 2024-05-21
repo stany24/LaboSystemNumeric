@@ -238,12 +238,5 @@ begin
 	   CCR_load_o <= '0';
 	end if;
 end process;
-	         
-
-
-
-
-
-
 
 end architecture Behavioral ; -- of Sequenceur
