@@ -67,7 +67,7 @@ architecture Structural of nanoProcesseur is
   signal loc_oper_load : std_logic;
   
   signal loc_sInterupt : std_logic;
-  signal loc_push_pop  : std_logic_vector(7 downto 0);
+  signal loc_push_pop  : std_logic_vector(1 downto 0);
   signal loc_restore   : std_logic;
   signal loc_accu_reload : std_logic_vector(7 downto 0);
   signal loc_ccr_reload : std_logic_vector(3 downto 0);
@@ -105,7 +105,7 @@ architecture Structural of nanoProcesseur is
       Accu_load_o : out    std_logic;
       CCR_load_o  : out    std_logic;
       sInterupt   : in     std_logic;
-      PushPop     : out    std_logic_vector(7 downto 0);
+      PushPop     : out    std_logic_vector(1 downto 0);
       data_wr_o   : out    std_logic);
   end component Sequenceur;
 

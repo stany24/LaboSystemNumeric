@@ -192,7 +192,7 @@ with pc_i select
          CallFunc & X"18" when X"12", -- Appelle la sous-routine suivante
          BRA & X"10" when X"13", -- Revient au début de la sous-routine
 
-         ReturnFunc when X"14", -- Retourne de la sous-routine
+         ReturnFunc & X"00" when X"14", -- Retourne de la sous-routine
 
          -- Sous-routine appelée par la précédente
          DECaddr & X"E0" when X"18", -- Décrément la valeur en RAM
@@ -200,19 +200,20 @@ with pc_i select
          CallFunc & X"20" when X"1A", -- Appelle la sous-routine suivante
          BRA & X"18" when X"1B", -- Revient au début de la sous-routine
 
-         ReturnFunc when X"1C", -- Retourne de la sous-routine
+         ReturnFunc & X"00" when X"1C", -- Retourne de la sous-routine
 
          -- Sous-routine appelée par la précédente
          DECaddr & X"E0" when X"20", -- Décrément la valeur en RAM
          BZ0 & X"24" when X"21", -- Si la valeur est zéro, saute à l'adresse 0x24
-         NOP when X"22", -- Instruction factice pour ralentir le programme
          BRA & X"20" when X"23", -- Revient au début de la sous-routine
 
-         ReturnFunc when X"24", -- Retourne de la sous-routine
+         ReturnFunc & X"00" when X"24", -- Retourne de la sous-routine
 
          -- Routine d'interruption
          LOADaddr & X"12" when X"30", -- Charge l'état des dilswitch 2
          STOREaddr & X"11" when X"31", -- Écrit la valeur sur CS_PORT_B
-         ReturnFunc when X"32"; -- Retourne de la routine d'interruption
+         ReturnFunc & X"00" when X"32", -- Retourne de la routine d'interruption
+         
+         BRA & X"00" when others;
           
 end architecture Behavioral ; -- of ROM
