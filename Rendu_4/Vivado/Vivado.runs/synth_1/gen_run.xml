@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tfgg484-1" LaunchTime="1712657349">
+<GenRun Id="synth_1" LaunchPart="xc7a35tfgg484-1" LaunchTime="1716132117">
   <File Type="PA-TCL" Name="nanoControleur.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="nanoControleur_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="nanoControleur_reports.tcl"/>
@@ -99,6 +99,12 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/Registers.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/imports/design.hdl/Sequenceur.vhd">
       <FileInfo>
         <Attr Name="ImportPath" Val="P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/EASE/nanoprocesseur_v4.ews/design.hdl/Sequenceur.vhd"/>
@@ -107,10 +113,22 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/Stack.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/imports/design.hdl/Status_Register.vhd">
       <FileInfo>
         <Attr Name="ImportPath" Val="P:/Formation/200_Bachelor/230_Niveau-1/233_Professeurs/1262_Archi_Sys_Info/1262.3_Sys_num_appliques/EASE/nanoprocesseur_v4.ews/design.hdl/Status_Register.vhd"/>
         <Attr Name="ImportTime" Val="1704216346"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Sync.vhd">
+      <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>

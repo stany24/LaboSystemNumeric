@@ -31,7 +31,9 @@ entity nanoControleur is
     port_a_i : in     std_logic_vector(7 downto 0);
     port_a_o : out    std_logic_vector(7 downto 0);
     port_b_i : in     std_logic_vector(7 downto 0);
-    port_b_o : out    std_logic_vector(7 downto 0));
+    port_b_o : out    std_logic_vector(7 downto 0);
+    
+    interupt: in      std_logic);
 end entity nanoControleur;
 
 --------------------------------------------------------------------------------
@@ -53,6 +55,19 @@ architecture Structural of nanoControleur is
   signal loc_cs_a     : std_logic;
   signal loc_cs_b     : std_logic;
   signal loc_cs_ram   : std_logic;
+  
+  signal loc_push_pop : std_logic_vector(1 downto 0);
+  signal loc_addr_restore : std_logic_vector(7 downto 0);
+  
+  component Stack
+     Port (
+       addr_i : in STD_LOGIC_VECTOR (0 to 7);
+       push_pop_i : in STD_LOGIC_VECTOR (0 to 1);
+       clk_i : in STD_LOGIC;
+       reset_i : in STD_LOGIC;
+       interupt : in STD_LOGIC;
+       addr_o : out STD_LOGIC_VECTOR (0 to 7));
+    end component Stack;
 
   component nanoProcesseur
     port (
@@ -63,7 +78,11 @@ architecture Structural of nanoControleur is
       addr_o    : out    std_logic_vector(7  downto 0);
       data_i    : in     std_logic_vector(7  downto 0);
       data_o    : out    std_logic_vector(7  downto 0);
-      data_wr_o : out    std_logic);
+      data_wr_o : out    std_logic;
+      
+      PushPop   : out    std_logic_vector(1 downto 0);
+      interupt  : in     std_logic;
+      restore_i : in     std_logic_vector(7 downto 0));
   end component nanoProcesseur;
 
   component ROM
@@ -114,6 +133,15 @@ architecture Structural of nanoControleur is
 begin
   loc_port_a_i <= port_a_i;
   loc_port_b_i <= port_b_i;
+  
+  stack1: Stack
+    port map(
+      addr_i => loc_PC,
+      push_pop_i => loc_push_pop,
+      clk_i => clk_i,
+      reset_i => reset_i,
+      interupt => interupt,
+      addr_o => loc_addr_restore);
 
   nPr_inst: nanoProcesseur
     port map(
@@ -124,7 +152,10 @@ begin
       addr_o    => loc_addr_o,
       data_i    => loc_data_i,
       data_o    => loc_data_o,
-      data_wr_o => loc_wr);
+      data_wr_o => loc_wr,
+      PushPop   => loc_push_pop,
+      interupt  => interupt,
+      restore_i =>  loc_addr_restore);
 
   ROM_inst: ROM
     port map(

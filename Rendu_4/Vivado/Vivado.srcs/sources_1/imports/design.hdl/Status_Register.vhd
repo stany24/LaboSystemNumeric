@@ -30,7 +30,8 @@ entity Status_Register is
     reset_i    : in     std_logic;
     CCR_load_i : in     std_logic;
     CCR_i      : in     std_logic_vector(3 downto 0);
-    CCR_o      : out    std_logic_vector(3 downto 0));
+    CCR_o      : out    std_logic_vector(3 downto 0);
+    CCR_reload : in     std_logic_vector(3 downto 0));
 end entity Status_Register;
 
 --------------------------------------------------------------------------------

@@ -30,7 +30,9 @@ entity W_Register is
     Accu_load_i : in     std_logic;
     Accu_o      : out    std_logic_vector(7 downto 0);
     clk_i       : in     std_logic;
-    reset_i     : in     std_logic);
+    reset_i     : in     std_logic;
+    Accu_reload : in     std_logic_vector(7 downto 0);
+    interupt    : in     std_logic);
 end entity W_Register;
 
 --------------------------------------------------------------------------------
