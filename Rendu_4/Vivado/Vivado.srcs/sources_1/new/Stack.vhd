@@ -42,7 +42,28 @@ end Stack;
 
 architecture Behavioral of Stack is
 
+type array_type is array(7 downto 0) of std_logic_vector(7 downto 0);
+signal meme : array_type;
+signal index :natural;
+
 begin
 
+process(clk_i,reset_i)
+begin
+  if reset_i = '0' then
+    addr_o <= (others => '0');
+  elsif interupt = '1' then
+    addr_o <= (others => '0');
+  elsif rising_edge(clk_i) then
+    if push_pop_i = "10" then
+      addr_o <= meme(index);
+      index <= index -1;
+    end if;
+    if push_pop_i = "01" then
+      index <= index +1;
+      meme(index) <= addr_i;
+    end if;
+  end if;
+end process;
 
 end Behavioral;
