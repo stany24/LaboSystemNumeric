@@ -10,3 +10,8 @@
 # Journal file: C:/Users/Stan/Documents/Git/LaboSystemNumeric/Rendu_5/Vivado\vivado.jou
 #-----------------------------------------------------------
 start_gui
+open_project C:/Users/Stan/Documents/Git/LaboSystemNumeric/Rendu_5/Vivado/Vivado.xpr
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse C:/Users/Stan/Downloads/testbench.vhd
+update_compile_order -fileset sim_1

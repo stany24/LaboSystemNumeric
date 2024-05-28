@@ -10,3 +10,16 @@
 # Journal file: C:/Users/Stan/Documents/Git/LaboSystemNumeric/Rendu_5/Vivado\vivado.jou
 #-----------------------------------------------------------
 start_gui
+open_project C:/Users/Stan/Documents/Git/LaboSystemNumeric/Rendu_5/Vivado/Vivado.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Stan/Documents/Git/LaboSystemNumeric/Rendu_4/Vivado' since last save.
+WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'C:/Users/Stan/Documents/Git/LaboSystemNumeric/Rendu_5/Vivado/Vivado.gen/sources_1', nor could it be found using path 'C:/Users/Stan/Documents/Git/LaboSystemNumeric/Rendu_4/Vivado/Vivado.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:08 . Memory (MB): peak = 1201.723 ; gain = 0.000
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse C:/Users/Stan/Downloads/testbench.vhd
+update_compile_order -fileset sim_1
