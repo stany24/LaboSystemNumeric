@@ -12,6 +12,9 @@ Compiling package std.textio
 Compiling package ieee.std_logic_1164
 Compiling package ieee.numeric_std
 Compiling package xil_defaultlib.nanoprocesseur_package
+Compiling architecture behavioral of entity xil_defaultlib.Stack [stack_default]
+Compiling architecture behavioral of entity xil_defaultlib.Sync [sync_default]
+Compiling architecture behavioral of entity xil_defaultlib.Registers [registers_default]
 Compiling architecture behavioral of entity xil_defaultlib.Sequenceur [sequenceur_default]
 Compiling architecture behavioral of entity xil_defaultlib.Program_Counter [program_counter_default]
 Compiling architecture behavioral of entity xil_defaultlib.Instruction_Register [instruction_register_default]

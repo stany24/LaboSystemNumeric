@@ -76,7 +76,9 @@ run: PROCESS
   PROCEDURE init IS
   BEGIN
   	reset_i <= '0';
-	
+	interupt <= '0';
+	port_a_i <= "00000000";
+	port_b_i <= "00000000";
   END init;
 
   --********** PROCEDURE "test_signal" **********
@@ -90,14 +92,14 @@ run: PROCESS
   END test_signal;
 
  --********** PROCEDURE "test_vecteur" **********
-  PROCEDURE test_vecteur(signal_test, value: IN std_logic_vector(7 DOWNTO 0); erreur : IN integer) IS 
+  PROCEDURE test_vector(signal_test, value: IN std_logic_vector(7 DOWNTO 0); erreur : IN integer) IS 
 	BEGIN
 	   IF signal_test/= value THEN
          	mark_error <= '1', '0' AFTER 1 ns;
          	error_number <= erreur;
          	ASSERT FALSE REPORT "Etat du signal non correct" SEVERITY WARNING;
 	   END IF;
-  END test_vecteur;
+  END test_vector;
 
 
 BEGIN --debut de la simulation temps t=0ns
@@ -106,7 +108,16 @@ BEGIN --debut de la simulation temps t=0ns
 	ASSERT FALSE REPORT "la simulation est en cours" SEVERITY NOTE;
 	--debut des tests
     sim_cycle(2);
-	
+    -- tests de l'état par défault
+	test_vector(port_a_i,"00000000",0);
+	sim_cycle(1);
+	test_vector(port_b_i,"00000000",1);
+	sim_cycle(1);
+	-- modification du dilswitch1
+	port_a_i <= "10101010";
+	sim_cycle(10);
+	test_vector(port_a_i,"10101010",2);
+	sim_cycle(1);
 	sim_end <= TRUE;
 	wait;
 
