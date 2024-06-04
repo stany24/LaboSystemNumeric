@@ -19,7 +19,7 @@ vhdl xil_defaultlib  \
 "../../../../Vivado.srcs/sources_1/imports/design.hdl/W_Register.vhd" \
 "../../../../Vivado.srcs/sources_1/imports/design.hdl/nanoControleur.vhd" \
 "../../../../Vivado.srcs/sources_1/imports/design.hdl/nanoProcesseur.vhd" \
-"../../../../Vivado.srcs/sim_1/imports/Downloads/testbench.vhd" \
+"../../../../Vivado.srcs/sim_1/new/Testbench.vhd" \
 
 # Do not sort compile order
 nosort

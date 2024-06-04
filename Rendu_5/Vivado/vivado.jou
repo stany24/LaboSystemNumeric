@@ -25,3 +25,4 @@ launch_simulation
 source testbench.tcl
 restart
 run all
+close_sim

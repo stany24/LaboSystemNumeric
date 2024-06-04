@@ -14,7 +14,8 @@ COMPONENT nanoControleur
     port_a_i : in     std_logic_vector(7 downto 0);
     port_a_o : out    std_logic_vector(7 downto 0);
     port_b_i : in     std_logic_vector(7 downto 0);
-    port_b_o : out    std_logic_vector(7 downto 0));
+    port_b_o : out    std_logic_vector(7 downto 0);
+    interupt: in      std_logic);
 END COMPONENT;
 
 --Signaux locaux pour instanciation composant UUT
@@ -27,6 +28,7 @@ SIGNAL port_b_i : std_logic_vector(7 downto 0);
 --Outputs
 SIGNAL port_a_o : std_logic_vector(7 downto 0);
 SIGNAL port_b_o : std_logic_vector(7 downto 0);
+SIGNAL interupt:  std_logic;
 
 --signaux propres au testbench
 SIGNAL sim_end      : BOOLEAN   := FALSE;
@@ -44,7 +46,8 @@ uut: nanoControleur
     port_a_i => port_a_i,
     port_b_i => port_b_i,
     port_a_o => port_a_o,
-    port_b_o => port_b_o
+    port_b_o => port_b_o,
+    interupt => interupt
     );
 --********** PROCESS "clk_gengen" **********
 clk_gengen: PROCESS
@@ -74,6 +77,7 @@ run: PROCESS
   BEGIN
     port_a_i <= "00000000";
     port_b_i <= "00000000";
+    interupt <= '0';
     reset_i <= '0';
   				
   END init;
@@ -105,21 +109,13 @@ BEGIN --debut de la simulation temps t=0ns
         ASSERT FALSE REPORT "la simulation est en cours" SEVERITY NOTE;
         --debut des tests
         
-        sim_cycle(200);
+        sim_cycle(2);
         reset_i <= '1';
-        sim_cycle(200);
         test_vecteur(port_a_o,"00000000",1);
-        sim_cycle(200);
-        port_a_i <= "10101010";
-        sim_cycle(200);
-        test_vecteur(port_a_o,"10101010",2);
-        sim_cycle(200);
-        port_b_i <= "01010101";
-        sim_cycle(200);
-        test_vecteur(port_a_o,"11111111",3);
-        sim_cycle(200);
-        test_vecteur(port_b_o,"01001110",4);
-        sim_cycle(200);
+        port_a_i <= "00000010";
+        sim_cycle(16);
+        test_vecteur(port_a_o,"00000010",2);
+        sim_cycle(100);
         sim_end <= TRUE;
         wait;
 

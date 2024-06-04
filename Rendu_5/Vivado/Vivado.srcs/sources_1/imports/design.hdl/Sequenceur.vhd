@@ -49,7 +49,7 @@ end entity Sequenceur;
 
 architecture Behavioral of Sequenceur is
 
-  type STATE_TYPE is (sRESET, sIR_LOAD, sIR_DECODE, sOPCODE_DECODE);
+  type STATE_TYPE is (sRESET, sIR_LOAD, sIR_DECODE, sOPCODE_DECODE, sINTERUPTION);
   signal state : STATE_TYPE;
   
 begin
@@ -74,6 +74,9 @@ begin
         state <= sOPCODE_DECODE;
         
       when sOPCODE_DECODE =>
+        state <= sIR_LOAD;
+       
+       when sINTERUPTION =>
         state <= sIR_LOAD;
 
       when others =>
@@ -240,12 +243,14 @@ begin
 	   CCR_load_o <= '0';
 	end if;
 end process;
+
+-- sInteruption
+P6:process(state,opcode_i)
+begin
+	if state = sINTERUPTION then
+	else
+	  
+	end if;
+end process;
 	         
-
-
-
-
-
-
-
 end architecture Behavioral ; -- of Sequenceur

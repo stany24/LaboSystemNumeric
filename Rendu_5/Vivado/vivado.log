@@ -248,3 +248,7 @@ INFO: [Simtcl 6-17] Simulation restarted
 run all
 Note: la simulation est en cours
 Time: 0 ps  Iteration: 0  Process: /testbench/run  File: C:/Users/Stan/Documents/Git/LaboSystemNumeric/Rendu_5/Vivado/Vivado.srcs/sim_1/imports/Downloads/testbench.vhd
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue May 28 12:18:33 2024...
