@@ -109,11 +109,15 @@ begin
         case opcode_i is          
           when BRA =>
             PC_inc_o <= '0';
+          when CallFunc =>
+            PC_inc_o <= '0';
+          when ReturnFunc =>
+            PC_inc_o <= '0';
           when BZ0 =>
             if CCR_i(Zidx) = '0' then
               PC_inc_o <= '0';
             end if;            
-	        when BZ1 =>
+	      when BZ1 =>
             if CCR_i(Zidx) = '1' then
               PC_inc_o <= '0';
             end if;
@@ -121,7 +125,7 @@ begin
             if CCR_i(Cidx) = '0' then
               PC_inc_o <= '0';
             end if;
-	        when BC1 =>
+	      when BC1 =>
             if CCR_i(Cidx) = '1' then
               PC_inc_o <= '0';
             end if;
@@ -129,7 +133,7 @@ begin
             if CCR_i(Vidx) = '0' then
               PC_inc_o <= '0';
             end if;
-	        when BV1 =>
+	      when BV1 =>
             if CCR_i(Vidx) = '1' then
               PC_inc_o <= '0';
             end if;
@@ -137,10 +141,10 @@ begin
             if CCR_i(Nidx) = '0' then
               PC_inc_o <= '0';
             end if;
-	        when BN1 =>
+	      when BN1 =>
             if CCR_i(Nidx) = '1' then
               PC_inc_o <= '0';
-            end if;	        
+            end if;	  
           when others =>
             null;
         end case;
@@ -170,7 +174,9 @@ begin
           when LOADaddr |
                INCaddr  |
                DECaddr  |
-               NEGaddr    =>
+               NEGaddr  |
+               CallFunc |
+               ReturnFunc  =>
             oper_sel_o <= MUX_DATA;
             
           -- 2 opérandes
@@ -248,6 +254,7 @@ end process;
 P6:process(state,opcode_i)
 begin
 	if state = sINTERUPTION then
+	   
 	else
 	  
 	end if;
