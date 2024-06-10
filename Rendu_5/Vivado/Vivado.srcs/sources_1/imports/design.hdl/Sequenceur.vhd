@@ -174,9 +174,7 @@ begin
           when LOADaddr |
                INCaddr  |
                DECaddr  |
-               NEGaddr  |
-               CallFunc |
-               ReturnFunc  =>
+               NEGaddr  =>
             oper_sel_o <= MUX_DATA;
             
           -- 2 opérandes
@@ -210,7 +208,8 @@ begin
                ADDconst | ADDaddr   | ADCaddr | ADCconst |
                INCaccu  | INCaddr   |
                DECaccu  | DECaddr   |
-               NEGaccu  | NEGaddr   | NEGconst =>
+               NEGaccu  | NEGaddr   | 
+               NEGconst =>
           	Accu_load_o <= '1'; 
             
           when others =>
@@ -257,6 +256,34 @@ begin
 	   
 	else
 	  
+	end if;
+end process;
+
+-- Push
+P7:process(state,opcode_i)
+begin
+	if state = sINTERUPTION then
+	   PushPop <= "11";
+	elsif state = sOPCODE_DECODE then
+        if opcode_i = CallFunc then
+            PushPop <= "11";
+        else
+            PushPop <= "01";
+        end if;
+	end if;
+end process;
+
+-- Pop
+P8:process(state,opcode_i)
+begin
+    if state = sOPCODE_DECODE then
+        if opcode_i = ReturnFunc then
+            PushPop <= "00";
+        else
+            PushPop <= "01";
+        end if;
+    else
+        PushPop <= "01";
 	end if;
 end process;
 	         
