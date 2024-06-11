@@ -60,4 +60,14 @@ set_property PACKAGE_PIN AB22  [get_ports port_b_o[5]]; set_property IOSTANDARD 
 set_property PACKAGE_PIN AA21  [get_ports port_b_o[6]]; set_property IOSTANDARD LVCMOS33 [get_ports port_b_o[6]]
 set_property PACKAGE_PIN AB20  [get_ports port_b_o[7]]; set_property IOSTANDARD LVCMOS33 [get_ports port_b_o[7]]
 
+set_property PACKAGE_PIN A18   [get_ports port_c_o[0]]; set_property IOSTANDARD LVCMOS33 [get_ports port_c_o[0]]
+set_property PACKAGE_PIN B20   [get_ports port_c_o[1]]; set_property IOSTANDARD LVCMOS33 [get_ports port_c_o[1]]
+set_property PACKAGE_PIN A20   [get_ports port_c_o[2]]; set_property IOSTANDARD LVCMOS33 [get_ports port_c_o[2]]
+set_property PACKAGE_PIN B21   [get_ports port_c_o[3]]; set_property IOSTANDARD LVCMOS33 [get_ports port_c_o[3]]
+set_property PACKAGE_PIN B16   [get_ports port_c_o[4]]; set_property IOSTANDARD LVCMOS33 [get_ports port_c_o[4]]
+set_property PACKAGE_PIN B18   [get_ports port_c_o[5]]; set_property IOSTANDARD LVCMOS33 [get_ports port_c_o[5]]
+set_property PACKAGE_PIN A19   [get_ports port_c_o[6]]; set_property IOSTANDARD LVCMOS33 [get_ports port_c_o[6]]
+set_property PACKAGE_PIN A21   [get_ports port_c_o[7]]; set_property IOSTANDARD LVCMOS33 [get_ports port_c_o[7]]
+
+
 create_clock -period 10.000 -name clk_i -waveform {0.000 5.000}

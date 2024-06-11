@@ -15,6 +15,7 @@ COMPONENT nanoControleur
     port_a_o : out    std_logic_vector(7 downto 0);
     port_b_i : in     std_logic_vector(7 downto 0);
     port_b_o : out    std_logic_vector(7 downto 0);
+    port_c_o : out    std_logic_vector(7 downto 0);
     interupt: in      std_logic);
 END COMPONENT;
 
@@ -28,6 +29,7 @@ SIGNAL port_b_i : std_logic_vector(7 downto 0);
 --Outputs
 SIGNAL port_a_o : std_logic_vector(7 downto 0);
 SIGNAL port_b_o : std_logic_vector(7 downto 0);
+SIGNAL port_c_o : std_logic_vector(7 downto 0);
 SIGNAL interupt:  std_logic;
 
 --signaux propres au testbench
@@ -47,6 +49,7 @@ uut: nanoControleur
     port_b_i => port_b_i,
     port_a_o => port_a_o,
     port_b_o => port_b_o,
+    port_c_o => port_c_o,
     interupt => interupt
     );
 --********** PROCESS "clk_gengen" **********
@@ -112,10 +115,13 @@ BEGIN --debut de la simulation temps t=0ns
         sim_cycle(2);
         reset_i <= '1';
         test_vecteur(port_a_o,"00000000",1);
+        sim_cycle(1);
         port_a_i <= "00000010";
         sim_cycle(16);
         test_vecteur(port_a_o,"00000010",2);
-        sim_cycle(100);
+        test_vecteur(port_c_o,"00000010",3);
+        sim_cycle(1000);
+        test_vecteur(port_c_o,"00100000",4);
         sim_end <= TRUE;
         wait;
 

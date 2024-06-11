@@ -29,6 +29,7 @@ entity Address_Decode is
     addr_i      : in     std_logic_vector(7 downto 0);
     cs_port_a_o : out    std_logic;
     cs_port_b_o : out    std_logic;
+    cs_port_c_o : out    std_logic;
     cs_ram_o    : out    std_logic);
 end entity Address_Decode;
 
@@ -46,6 +47,7 @@ cs_ram_o    <= '1' when addr_i(7 DOWNTO 5) = "111" else '0';
 
 cs_port_a_o	<= '1' when addr_i = X"10" else '0';
 cs_port_b_o	<= '1' when addr_i = X"11" else '0'; 
+cs_port_b_o	<= '1' when addr_i = X"12" else '0'; 
 
 
 end architecture behavioral ; -- of Address_Decode

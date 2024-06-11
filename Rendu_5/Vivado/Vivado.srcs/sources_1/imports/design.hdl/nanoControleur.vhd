@@ -32,6 +32,7 @@ entity nanoControleur is
     port_a_o : out    std_logic_vector(7 downto 0);
     port_b_i : in     std_logic_vector(7 downto 0);
     port_b_o : out    std_logic_vector(7 downto 0);
+    port_c_o : out    std_logic_vector(7 downto 0);
     
     interupt: in      std_logic);
 end entity nanoControleur;
@@ -54,6 +55,7 @@ architecture Structural of nanoControleur is
   signal loc_addr_o   : std_logic_vector(7  downto 0);
   signal loc_cs_a     : std_logic;
   signal loc_cs_b     : std_logic;
+  signal loc_cs_c     : std_logic;
   signal loc_cs_ram   : std_logic;
   
   signal loc_push_pop : std_logic_vector(1 downto 0);
@@ -127,6 +129,7 @@ architecture Structural of nanoControleur is
       addr_i      : in     std_logic_vector(7 downto 0);
       cs_port_a_o : out    std_logic;
       cs_port_b_o : out    std_logic;
+      cs_port_c_o : out    std_logic;
       cs_ram_o    : out    std_logic);
   end component Address_Decode;
 
@@ -198,12 +201,22 @@ begin
       load_i  => loc_wr,
       data_i  => loc_data_o,
       data_o  => port_b_o);
+      
+  Port_c_Out_inst: Output_Register
+    port map(
+      clk_i   => clk_i,
+      reset_i => reset_i,
+      cs_i    => loc_cs_c,
+      load_i  => loc_wr,
+      data_i  => loc_data_o,
+      data_o  => port_c_o);
 
   Add_Dec_inst: Address_Decode
     port map(
       addr_i      => loc_addr_o,
       cs_port_a_o => loc_cs_a,
       cs_port_b_o => loc_cs_b,
+      cs_port_c_o => loc_cs_c,
       cs_ram_o    => loc_cs_ram);
 
 end architecture Structural ; -- of nanoControleur
