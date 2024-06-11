@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Sat Jun  8 16:40:56 2024
-# Process ID: 1776
+# Start of session at: Tue Jun 11 09:26:01 2024
+# Process ID: 20916
 # Current directory: C:/Users/Stan/Documents/Git/LaboSystemNumeric/Rendu_5/Vivado/Vivado.runs/synth_1
 # Command line: vivado.exe -log nanoControleur.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source nanoControleur.tcl
 # Log file: C:/Users/Stan/Documents/Git/LaboSystemNumeric/Rendu_5/Vivado/Vivado.runs/synth_1/nanoControleur.vds

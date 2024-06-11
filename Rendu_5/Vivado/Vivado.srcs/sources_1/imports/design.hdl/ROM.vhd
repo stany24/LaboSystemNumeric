@@ -37,9 +37,7 @@ end entity ROM;
 
 architecture Behavioral of ROM is
 
-
 begin
-
 
 with pc_i select
     ir_o <=
@@ -48,53 +46,46 @@ with pc_i select
          LOADconst & X"0F" when X"00",
          STOREaddr & X"12" when X"01",
 
-         -- Lire l'état des 8 dilswitch 1
+         -- Écrire l'état des dilswitch sur le barre graphe 1 et en RAM
          LOADaddr & X"10" when X"02",
-
-         -- Sauvegarder la valeur des dilswitch 1 en RAM
          STOREaddr & X"E0" when X"03",
-
-         -- Écrire l'état des dilswitch sur le barre graphe 1
          STOREaddr & X"10" when X"04",
 
-         -- Créer une temporisation avec la valeur des dilswitch en RAM
-         LOADaddr & X"E0" when X"05", -- Charge la valeur depuis la RAM
-         CallFunc & X"10" when X"06", -- Appelle la sous-routine de temporisation
+         -- Appel de la première fonction de temporisation
+         LOADaddr & X"E0" when X"05",
+         CallFunc & X"10" when X"06",
 
          -- Inverser l'état des 4 leds bicolores rouges/vertes
-         LOADaddr & X"10" when X"07", -- Charge l'état actuel des leds
-         XORconst & X"0F" when X"08", -- Inverse les 4 bits de poids faible
-         STOREaddr & X"10" when X"09", -- Écrit le nouveau état dans CS_PORT_A
-         BRA & X"02" when X"0A", -- Revient au début de la boucle
+         LOADaddr & X"10" when X"07",
+         XORconst & X"0F" when X"08",
+         STOREaddr & X"10" when X"09",
+         BRA & X"02" when X"0A",
 
-         -- Sous-routine de temporisation
-         DECaddr & X"E0" when X"10", -- Décrément la valeur en RAM
-         BZ0 & X"14" when X"11", -- Si la valeur est zéro, saute à l'adresse 0x14
-         CallFunc & X"18" when X"12", -- Appelle la sous-routine suivante
-         BRA & X"10" when X"13", -- Revient au début de la sous-routine
+         -- Première fonction de temporisation
+         DECaddr & X"E0" when X"10",
+         BZ0 & X"14" when X"11", 
+         CallFunc & X"18" when X"12",
+         BRA & X"10" when X"13", 
+         ReturnFunc & X"00" when X"14",
 
-         ReturnFunc & X"00" when X"14", -- Retourne de la sous-routine
+         -- Deuxième Sous-routine
+         DECaddr & X"E0" when X"18",
+         BZ0 & X"1C" when X"19",
+         CallFunc & X"20" when X"1A", 
+         BRA & X"18" when X"1B",
+         ReturnFunc & X"00" when X"1C",
 
-         -- Sous-routine appelée par la précédente
-         DECaddr & X"E0" when X"18", -- Décrément la valeur en RAM
-         BZ0 & X"1C" when X"19", -- Si la valeur est zéro, saute à l'adresse 0x1C
-         CallFunc & X"20" when X"1A", -- Appelle la sous-routine suivante
-         BRA & X"18" when X"1B", -- Revient au début de la sous-routine
+         -- Troisième fonction
+         DECaddr & X"E0" when X"20",
+         BZ0 & X"24" when X"21",
+         BRA & X"20" when X"22",
+         ReturnFunc & X"00" when X"23",
 
-         ReturnFunc & X"00" when X"1C", -- Retourne de la sous-routine
-
-         -- Sous-routine appelée par la précédente
-         DECaddr & X"E0" when X"20", -- Décrément la valeur en RAM
-         BZ0 & X"24" when X"21", -- Si la valeur est zéro, saute à l'adresse 0x24
-         BRA & X"20" when X"23", -- Revient au début de la sous-routine
-
-         ReturnFunc & X"00" when X"24", -- Retourne de la sous-routine
-
-         -- Routine d'interruption
-         LOADaddr & X"12" when X"30", -- Charge l'état des dilswitch 2
-         STOREaddr & X"11" when X"31", -- Écrit la valeur sur CS_PORT_B
-         ReturnFunc & X"00" when X"32", -- Retourne de la routine d'interruption
-         
+         -- Fonction d'interruption
+         LOADaddr & X"12" when X"30",
+         STOREaddr & X"11" when X"31",
+         ReturnFunc & X"00" when X"32",
+        
          BRA & X"00" when others;
           
 end architecture Behavioral ; -- of ROM

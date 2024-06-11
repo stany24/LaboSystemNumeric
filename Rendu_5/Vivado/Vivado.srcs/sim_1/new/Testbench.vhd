@@ -116,12 +116,12 @@ BEGIN --debut de la simulation temps t=0ns
         reset_i <= '1';
         test_vecteur(port_a_o,"00000000",1);
         sim_cycle(1);
-        port_a_i <= "00000010";
+        port_a_i <= "00001000";
         sim_cycle(16);
         test_vecteur(port_a_o,"00000010",2);
-        test_vecteur(port_c_o,"00000010",3);
+        test_vecteur(port_c_o,"11110000",3);
         sim_cycle(1000);
-        test_vecteur(port_c_o,"00100000",4);
+        test_vecteur(port_c_o,"00001111",4);
         sim_end <= TRUE;
         wait;
 

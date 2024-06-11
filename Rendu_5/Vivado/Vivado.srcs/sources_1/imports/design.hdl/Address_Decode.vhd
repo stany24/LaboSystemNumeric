@@ -47,7 +47,7 @@ cs_ram_o    <= '1' when addr_i(7 DOWNTO 5) = "111" else '0';
 
 cs_port_a_o	<= '1' when addr_i = X"10" else '0';
 cs_port_b_o	<= '1' when addr_i = X"11" else '0'; 
-cs_port_b_o	<= '1' when addr_i = X"12" else '0'; 
+cs_port_c_o	<= '1' when addr_i = X"12" else '0'; 
 
 
 end architecture behavioral ; -- of Address_Decode

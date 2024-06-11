@@ -259,7 +259,7 @@ begin
 	end if;
 end process;
 
--- Push
+-- Push-Pop
 P7:process(state,opcode_i)
 begin
 	if state = sINTERUPTION then
@@ -267,17 +267,7 @@ begin
 	elsif state = sOPCODE_DECODE then
         if opcode_i = CallFunc then
             PushPop <= "11";
-        else
-            PushPop <= "01";
-        end if;
-	end if;
-end process;
-
--- Pop
-P8:process(state,opcode_i)
-begin
-    if state = sOPCODE_DECODE then
-        if opcode_i = ReturnFunc then
+        elsif opcode_i = ReturnFunc then
             PushPop <= "00";
         else
             PushPop <= "01";
