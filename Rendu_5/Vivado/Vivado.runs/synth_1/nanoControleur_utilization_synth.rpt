@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Tue Jun 11 09:27:10 2024
+| Date         : Tue Jun 11 11:40:45 2024
 | Host         : DESKTOP-GGBBNKF running 64-bit major release  (build 9200)
 | Command      : report_utilization -file nanoControleur_utilization_synth.rpt -pb nanoControleur_utilization_synth.pb
 | Design       : nanoControleur
@@ -30,8 +30,8 @@ Table of Contents
 +----------------------------+------+-------+-----------+-------+
 |          Site Type         | Used | Fixed | Available | Util% |
 +----------------------------+------+-------+-----------+-------+
-| Slice LUTs*                |  160 |     0 |     20800 |  0.77 |
-|   LUT as Logic             |  152 |     0 |     20800 |  0.73 |
+| Slice LUTs*                |  162 |     0 |     20800 |  0.78 |
+|   LUT as Logic             |  154 |     0 |     20800 |  0.74 |
 |   LUT as Memory            |    8 |     0 |      9600 |  0.08 |
 |     LUT as Distributed RAM |    8 |     0 |           |       |
 |     LUT as Shift Register  |    0 |     0 |           |       |
@@ -151,14 +151,14 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| LUT6     |   83 |                 LUT |
+| LUT6     |   88 |                 LUT |
 | FDCE     |   76 |        Flop & Latch |
-| LUT2     |   41 |                 LUT |
-| LUT5     |   25 |                 LUT |
+| LUT2     |   40 |                 LUT |
 | OBUF     |   24 |                  IO |
+| LUT5     |   20 |                 LUT |
 | LUT4     |   20 |                 LUT |
 | IBUF     |   18 |                  IO |
-| LUT3     |   13 |                 LUT |
+| LUT3     |   14 |                 LUT |
 | RAMS32   |    8 |  Distributed Memory |
 | CARRY4   |    5 |          CarryLogic |
 | MUXF7    |    4 |               MuxFx |

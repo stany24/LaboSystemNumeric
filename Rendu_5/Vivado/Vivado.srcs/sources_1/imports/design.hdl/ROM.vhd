@@ -47,21 +47,23 @@ with pc_i select
          -- Allumer 4 leds bicolores rouges
          LOADconst & X"0F" when X"00",
          STOREaddr & X"12" when X"01",
+         STOREaddr & X"E5" when X"02",
 
          -- Écrire l'état des dilswitch sur le barre graphe 1 et en RAM
-         LOADaddr & X"10" when X"02",
-         STOREaddr & X"E0" when X"03",
-         STOREaddr & X"10" when X"04",
+         LOADaddr & X"10" when X"03",
+         STOREaddr & X"E0" when X"04",
+         STOREaddr & X"10" when X"05",
 
          -- Appel de la première fonction de temporisatio
-         LOADaddr & X"E0" when X"05",
-         CallFunc & X"10" when X"06",
+         LOADaddr & X"E0" when X"06",
+         CallFunc & X"10" when X"07",
 
          -- Inverser l'état des 4 leds bicolores rouges/vertes
-         LOADaddr & X"10" when X"07",
-         XORconst & X"FF" when X"08",
-         STOREaddr & X"10" when X"09",
-         BRA & X"02" when X"0A",
+         LOADaddr & X"E5" when X"08",
+         XORconst & X"FF" when X"09",
+         STOREaddr & X"E5" when X"0A",
+         STOREaddr & X"12" when X"0B",
+         BRA & X"02" when X"0C",
 
          -- Première fonction de temporisation
          DECaddr & X"E0" when X"10",
