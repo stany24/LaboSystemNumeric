@@ -37,7 +37,9 @@ end entity ROM;
 
 architecture Behavioral of ROM is
 
+
 begin
+
 
 with pc_i select
     ir_o <=
@@ -51,13 +53,13 @@ with pc_i select
          STOREaddr & X"E0" when X"03",
          STOREaddr & X"10" when X"04",
 
-         -- Appel de la première fonction de temporisation
+         -- Appel de la première fonction de temporisatio
          LOADaddr & X"E0" when X"05",
          CallFunc & X"10" when X"06",
 
          -- Inverser l'état des 4 leds bicolores rouges/vertes
          LOADaddr & X"10" when X"07",
-         XORconst & X"0F" when X"08",
+         XORconst & X"FF" when X"08",
          STOREaddr & X"10" when X"09",
          BRA & X"02" when X"0A",
 
@@ -77,7 +79,7 @@ with pc_i select
 
          -- Troisième fonction
          DECaddr & X"E0" when X"20",
-         BZ0 & X"24" when X"21",
+         BZ0 & X"23" when X"21",
          BRA & X"20" when X"22",
          ReturnFunc & X"00" when X"23",
 
